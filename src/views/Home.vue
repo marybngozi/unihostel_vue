@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home container-fluid p-0 m-0">
     <NavTop/>
   </div>
 </template>
