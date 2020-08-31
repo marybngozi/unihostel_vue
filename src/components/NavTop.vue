@@ -52,7 +52,7 @@
                             <a class="nav-link text-dark" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">About us</a>
+                            <a class="nav-link text-dark" href="/about">About us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" href="#">Pages</a>
