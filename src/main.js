@@ -11,6 +11,8 @@ import axios from 'axios'
 import Vuelidate from  'vuelidate';
 import VueToastr from "vue-toastr";
 
+import "@/assets/css/tailwind.css";
+
 Vue.prototype.$http = axios
 Vue.use(Vuelidate)
 Vue.use(VueToastr, {});
