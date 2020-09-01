@@ -4,8 +4,8 @@ module.exports = {
     theme: {
       extend: {
         colors: {
-          "swizel-colorA": "#2F4F4F",
-          "swizel-colorB": "#377781",
+          "footer-bg": "#0C2034",
+          "hr-color": "#377781",
           "swizel-colorC": "#86E2EF",
           "swizel-colorD": "#16829F"
         }

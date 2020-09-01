@@ -10,7 +10,7 @@
             </div>
             <div class="middle-header row mt-4 ml-3">
                 <div class="col-md-3 ml-1 mr-0">
-                    <router-link to="/"><a href=""></a><img src="../assets/unilogo.png" alt="Unizik Logo" class="img-fluid"></router-link>
+                    <router-link to="/"><a href=""></a><img src="../assets/images/unilogo.png" alt="Unizik Logo" class="img-fluid"></router-link>
                 </div>
                 <div class="col-md-2 row mt-3 mx-0">
                     <div class="col-md-2 ">
@@ -173,7 +173,7 @@
         <section id="tour">
             <div class="row justify-content-center py-3">
                 <div class="col-md-4">
-                    <img src="../assets/slide2.png" width="400" height="280" alt="Hostel Tour">
+                    <img src="../assets/images/slide2.png" width="400" height="280" alt="Hostel Tour">
                 </div>
                 <div class="col-md-4 pt-5">
                     <p class="text-uppercase text-primary font-weight-bold">Take a look at our</p>
@@ -213,7 +213,7 @@
                     <div class="row justify-content-between mt-5">
                         <div class="col-md-7 row">
                             <div class="col-md-3">
-                                <img class="rounded-circle" src="../assets/testipic.png" alt="student" width="60" height="60">
+                                <img class="rounded-circle" src="../assets/images/testipic.png" alt="student" width="60" height="60">
                             </div>
                             <div class="col-md-5 pl-0 mt-3">
                                 <p class="mb-1 font-weight-bold">Lucy Uzondu</p>
@@ -266,7 +266,7 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-md-2 mr-4">
                     <div class="col-md-12">
-                        <img src="../assets/gallery1.png" alt="" width="240" height="180">
+                        <img src="../assets/images/gallery1.png" alt="" width="240" height="180">
                     </div>
                     <div class="row ml-2 mt-3" >
                         <div class="col-md-2">
@@ -285,7 +285,7 @@
                 </div>
                 <div class="col-md-2 mr-4">
                     <div class="col-md-12">
-                        <img src="../assets/gallery2.png" alt="" width="240" height="180">
+                        <img src="../assets/images/gallery2.png" alt="" width="240" height="180">
                     </div>
                     <div class="row ml-2 mt-3" >
                         <div class="col-md-2">
@@ -304,7 +304,7 @@
                 </div>
                 <div class="col-md-2 mr-4">
                     <div class="col-md-12">
-                        <img src="../assets/gallery3.png" alt="" width="240" height="180">
+                        <img src="../assets/images/gallery3.png" alt="" width="240" height="180">
                     </div>
                     <div class="row ml-2 mt-3" >
                         <div class="col-md-2">
@@ -323,7 +323,7 @@
                 </div>
                 <div class="col-md-2 mr-4">
                     <div class="col-md-12">
-                        <img src="../assets/gallery4.png" alt="" width="240" height="180">
+                        <img src="../assets/images/gallery4.png" alt="" width="240" height="180">
                     </div>
                     <div class="row ml-2 mt-3" >
                         <div class="col-md-2">
@@ -354,7 +354,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-3">
                     <div class="col-md-12">
-                        <img src="../assets/news1.png" alt="unizik picture" width="260" height="180">
+                        <img src="../assets/images/news1.png" alt="unizik picture" width="260" height="180">
                     </div>
                     <div class="row ml-1 mt-3">
                         <div class="col-md-2">
@@ -386,7 +386,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="col-md-12">
-                        <img src="../assets/news2.png" alt="unizik picture" width="260" height="180">
+                        <img src="../assets/images/news2.png" alt="unizik picture" width="260" height="180">
                     </div>
                     <div class="row ml-1 mt-3">
                         <div class="col-md-2">
@@ -418,7 +418,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="col-md-12">
-                        <img src="../assets/news3.png" alt="unizik picture" width="260" height="180">
+                        <img src="../assets/images/news3.png" alt="unizik picture" width="260" height="180">
                     </div>
                     <div class="row ml-1 mt-3">
                         <div class="col-md-2">
@@ -455,88 +455,16 @@
                 <hr class="bg-dark">
             </div>
             <div class="d-flex justify-content-center">
-                <img src="../assets/supports/1.png" alt="company logo" class="mx-5" width="100" height="50" >
-                <img src="../assets/supports/2.png" alt="company logo" class="mx-5" width="100" height="50" >
-                <img src="../assets/supports/3.png" alt="company logo" class="mx-5" width="100" height="50" >
-                <img src="../assets/supports/4.png" alt="company logo" class="mx-5" width="100" height="50" >
-                <img src="../assets/supports/5.png" alt="company logo" class="mx-5" width="100" height="50" >
-                <img src="../assets/supports/3.png" alt="company logo" class="mx-5" width="100" height="50" >
-                <img src="../assets/supports/1.png" alt="company logo" class="mx-5" width="100" height="50" >
+                <img src="../assets/images/1.png" alt="company logo" class="mx-5" width="100" height="50" >
+                <img src="../assets/images/2.png" alt="company logo" class="mx-5" width="100" height="50" >
+                <img src="../assets/images/3.png" alt="company logo" class="mx-5" width="100" height="50" >
+                <img src="../assets/images/4.png" alt="company logo" class="mx-5" width="100" height="50" >
+                <img src="../assets/images/5.png" alt="company logo" class="mx-5" width="100" height="50" >
+                <img src="../assets/images/3.png" alt="company logo" class="mx-5" width="100" height="50" >
+                <img src="../assets/images/1.png" alt="company logo" class="mx-5" width="100" height="50" >
             </div>
         </section>
-        <footer class="pt-4 pb-2">
-            <div class="text-center pt-5">
-                <p class="font-weight-bold text-white foot-title">
-                    UNDERGO YOUR STUDIES IN A PEACEFUL ACCOMMODATION
-                </p>
-            </div>
-            <div class="w-75 mx-auto my-5">
-                <hr class="bg-dark">
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-2">
-                    <div class="text-center">
-                        <p class="text-white font-weight-bold foot-col1-text mb-5">
-                            BOOK A ROOM TODAY
-                        </p>
-                    </div>
-                    <div class="px-3 text-center">
-                        <button class="btn foot-btn btn-primary w-75 mb-3">SIGN UP</button>
-                        <button class="btn foot-btn btn-orange w-75 text-white">LOGIN</button>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <p class="text-white font-weight-bold foot-col1-text mb-4">
-                        COMPANY
-                    </p>
-                    <p class="mb-2 text-white-50">About Us</p>
-                    <p class="mb-2 text-white-50">Company</p>
-                    <p class="mb-2 text-white-50">Press & Blog</p>
-                    <p class="mb-2 text-white-50">Privacy Policy</p>
-                    <p class="mb-2 text-white-50">FAQ</p>
-                </div>
-                <div class="col-md-2">
-                    <p class="text-white font-weight-bold foot-col1-text mb-4">
-                        DAYS FOR REG
-                    </p>
-                    <p class="mb-2 text-white-50">Monday 11am-7pm</p>
-                    <p class="mb-2 text-white-50">Tuesday-Friday 11am-8pm</p>
-                    <p class="mb-2 text-white-50">Saturday 10am-6pm</p>
-                    <p class="mb-2 text-white-50">Sunday 11am-6pm</p>
-                </div>
-                <div class="col-md-2">
-                    <p class="text-white font-weight-bold foot-col1-text mb-4">
-                        RESOURCES
-                    </p>
-                    <p class="mb-2 text-white-50">Home Insurance</p>
-                    <p class="mb-2 text-white-50">Travel Insurance</p>
-                    <p class="mb-2 text-white-50">Car Insurance</p>
-                    <p class="mb-2 text-white-50">Business Insurance</p>
-                    <p class="mb-2 text-white-50">Health Insurance</p>
-                </div>
-                <div class="col-md-2 mt-n4">
-                    <div>
-                        <img src="../assets/uniziklogo.png" alt="Unizik logo" width="60" height="80">
-                    </div>
-                    <div>
-                        <p class="text-white-50">
-                            We have been providing quality coverage, superior value and personal service to our customers since 2000.
-                        </p>
-                    </div>
-                    <div class="">
-                        <!-- icons -->
-                    </div>
-                </div>
-            </div>
-            <div class="w-75 mx-auto mt-5 mb-3">
-                <hr class="bg-dark">
-            </div>
-            <div class="text-center">
-                <p class="text-white-50">
-                    © 2019, Nnamdi Azikiwe University. Awka, All rights reserved.
-                </p>
-            </div>
-        </footer>
+        
     </div>
 </template>
 
@@ -641,7 +569,7 @@ footer{
     width: 100%;
     height: 350px;
     background-size: cover;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.89), rgba(24, 22, 22, 0.924)),url('../assets/slide1.png');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.89), rgba(24, 22, 22, 0.924)),url('../assets/images/slide1.png');
     margin-top: 16%;
 }
 .slideHeading{
@@ -672,15 +600,15 @@ footer{
 }
 #slide1{
     background-size: cover;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.89), rgba(24, 22, 22, 0.692), transparent),url('../assets/slide1.png');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.89), rgba(24, 22, 22, 0.692), transparent),url('../assets/images/slide1.png');
 }
 #slide2{
     background-size: cover;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.89), rgba(24, 22, 22, 0.534), transparent),url('../assets/slide2.png');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.89), rgba(24, 22, 22, 0.534), transparent),url('../assets/images/slide2.png');
 }
 #slide3{
     background-size: cover;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.89), rgba(24, 22, 22, 0.678), transparent),url('../assets/slide1.png');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.89), rgba(24, 22, 22, 0.678), transparent),url('../assets/images/slide1.png');
 }
 #floatNavbar{
     z-index: 200;
