@@ -27,7 +27,7 @@ module.exports = {
       },
       fontFamily: {
         // eslint-disable-next-line prettier/prettier
-        "swizelFont": "Raleway",
+        "unihostelFont": "Noto Sans",
         "poppins": "Poppins"
       }
     },
