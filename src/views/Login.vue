@@ -1,17 +1,17 @@
 <template>
-    <main class="flex justify-center items-center h-screen text-noto-sans">
+    <main class="flex justify-center items-center h-screen text-unihostelFont">
         <!-- <div class=""> -->
             <!-- <div class="h-auto "> -->
-                <div class="bg-white shadow-2x w-10/12 mx-auto">
-                    <div class="h-20" id="leftImg">
+                <div class="bg-white shadow-2x xs:w-11/12 w-10/12 lg:w-8/12 md:flex mx-auto">
+                    <div class="h-20 md:h-auto md:w-1/3 lg:w-1/3" id="leftImg">
                     </div>
-                    <div class="p-5">
+                    <div class="p-5 md:w-2/3 lg:w-2/3">
                         <div class="">
-                            <p class="text-right p-8">LOGIN</p>
+                            <p class="text-right p-8 md:p-5 text-gray-600 font-regular">LOGIN</p>
                         </div>
                         <div class="flex justify-center space-x-2">
                             <img src="../assets/images/uniziklogo.png" class="text-right" alt="unizik picture" width="30" height="50">
-                            <h1 class="font-bold text-3xl text-gray-700 mt-2">UNIZIK HOSTELS</h1>
+                            <h1 class="font-bold text-2xl text-gray-700 mt-2">UNIZIK HOSTELS</h1>
                         </div>
                         <div class="mt-8">
                             <p class="text-gray-600">
@@ -25,16 +25,16 @@
                             </div>
                             <div class="field">
                                 <input class="text-gray-600" type="text" name="password" id="password" placeholder="*******">
-                                <label for="password" class="text-gray-600">Password</label>
+                                <label for="password" class="text-gray-600 p-2 text-xs font-thin">Password</label>
                             </div>
-                            <div class="">
+                            <div class="flex justify-end mt-10">
                                 <button type="submit" @click="login()">
                                     LOGIN
                                     <i class="fa fa-sign-in-alt text-orange-700"></i>
                                 </button>
                             </div>
                         </form>
-                        <div class="">
+                        <div class="mt-8">
                             <p class="text-gray-600">
                                 Don't have account? 
                                 <router-link to="/signup">Sign up</router-link>
@@ -65,12 +65,13 @@ export default {
 <style scoped>
     main{
         background: linear-gradient(rgba(26, 13, 1, 0.76), rgba(20, 10, 1, 0.856)), url('../assets/images/slide1.png');
-        background-size:cover;
+        background-size: cover;
     }
     #leftImg{
-        width: 100%;
         background: url('../assets/images/login.png');
-        background-size:cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     .field {
         display: flex;
@@ -83,11 +84,9 @@ export default {
     label, input {
         transition: all 0.2s;
         touch-action: manipulation;
-        font-size: 0.9em;
     }
 
     input {
-        font-size: 1.2em;
         border: 0;
         border-bottom: 1px solid #ccc;
         -webkit-appearance: none;

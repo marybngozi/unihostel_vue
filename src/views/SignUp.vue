@@ -1,40 +1,39 @@
 <template>
-    <main class="">
-        <div class="mt-32 grid grid-cols-6 ">
-            <div class="col-start-2 col-span-4 h-auto ">
-                <div class="bg-white grid grid-cols-3 shadow-2x">
-                    <div class="col-span-1" id="leftImg">
-                        <!-- <img class="" width="300" height="800" src="../assets/images/login.png" alt="unizik picture"> -->
+    <main class="flex justify-center items-center h-screen text-unihostelFont">
+        <!-- <div class=""> -->
+            <!-- <div class="h-auto "> -->
+                <div class="bg-white shadow-2x xs:w-11/12 w-10/12 lg:w-8/12 md:flex mx-auto">
+                    <div class="h-20 md:h-auto md:w-1/3 lg:w-1/3" id="leftImg">
                     </div>
-                    <div class="col-span-2">
+                    <div class="p-5 md:w-2/3 lg:w-2/3">
                         <div class="">
-                            <p class="text-right p-10 pr-20">REGISTER</p>
+                            <p class="text-right p-8 md:p-5 text-gray-600 font-regular">REGISTER</p>
                         </div>
-                        <div class="px-40 grid grid-cols-7 mb-10">
-                            <img src="../assets/images/uniziklogo.png" class="col-start-2 col-span-1 text-right" alt="unizik picture" width="30" height="50">
-                            <h1 class="col-span-4 font-bold text-3xl mt-2 text-gray-700" >UNIZIK HOSTELS</h1>
+                        <div class="flex justify-center space-x-2">
+                            <img src="../assets/images/uniziklogo.png" class="text-right" alt="unizik picture" width="30" height="50">
+                            <h1 class="font-bold text-2xl text-gray-700 mt-2">UNIZIK HOSTELS</h1>
                         </div>
-                        <div class="px-40 ">
+                        <div class="mt-8">
                             <p class="text-gray-600">
                                 Register or Login to book a room for either yourself or your ward for the next academic session
                             </p>
                         </div>
-                        <form class="px-40 pt-5" action="#" @submit.prevent>
-                            <div class="field ">
-                                <input class="text-gray-600 p-2" type="text" name="regNumber" id="regNumber" placeholder="2020364386">
-                                <label for="regNumber" class="text-gray-600 p-1">Reg Number</label>
+                        <form class="mt-5" action="#" @submit.prevent>
+                            <div class="field">
+                                <input class="text-gray-600" type="text" name="regNumber" id="regNumber" placeholder="2020364386">
+                                <label for="regNumber" class="text-gray-600 p-2 text-xs font-thin">Reg Number</label>
                             </div>
-                            <div v-if="reqValidated" id="reqValidated">
+                            <div v-if="reqValidated">
                                 <div class="field">
-                                    <input class="text-gray-600 p-2" type="text" name="password" id="password" placeholder="*******">
-                                    <label for="password" class="text-gray-600 p-1">Password</label>
+                                    <input class="text-gray-600" type="text" name="password" id="password" placeholder="*******">
+                                    <label for="password" class="text-gray-600 p-2 text-xs font-thin">Password</label>
                                 </div>
                                 <div class="field">
-                                    <input class="text-gray-600 p-2" type="text" name="passwordVerify" id="passwordVerify" placeholder="*******">
-                                    <label for="passwordVerify" class="text-gray-600 p-1">Confirm Password</label>
+                                    <input class="text-gray-600" type="text" name="confirmPassword" id="confirmPassword" placeholder="*******">
+                                    <label for="confirmPassword" class="text-gray-600 p-2 text-xs font-thin">Confirm Password</label>
                                 </div>
                             </div>
-                            <div class="mt-10 mb-16 flex justify-end">
+                            <div class="flex justify-end mt-10">
                                 <button v-if="!reqValidated"  type="submit" @click="checkRegNumber()">
                                     Next
                                     <i class="fa fa-arrow-right text-orange-700"></i>
@@ -45,16 +44,16 @@
                                 </button>
                             </div>
                         </form>
-                        <div class="pl-8 mb-5">
+                        <div class="mt-8">
                             <p class="text-gray-600">
-                                Already have an account? 
+                                Already have an account?  
                                 <router-link to="/login">Login</router-link>
                             </p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            <!-- </div> -->
+        <!-- </div> -->
     </main>
 </template>
 
@@ -68,6 +67,11 @@ export default {
     data() {
         return {
             reqValidated: false,
+            formInfo: {
+                regNumber: null,
+                password: null,
+                confirmPassword: null,
+            }
         }
     },
     methods: {
@@ -84,40 +88,29 @@ export default {
 
 <style scoped>
     main{
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 100vh;
-        min-height:100vh;
         background: linear-gradient(rgba(26, 13, 1, 0.76), rgba(20, 10, 1, 0.856)), url('../assets/images/slide1.png');
-        background-size:cover;
+        background-size: cover;
     }
     #leftImg{
-        width: 100%;
-        /* height: 100vh; */
         background: url('../assets/images/login.png');
-        background-size:cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     .field {
         display: flex;
         flex-flow: column-reverse;
         margin-bottom: 1em;
-        /* border-left: 0; */
-        /* transition: border-left 1s; */
     }
-    .field:hover{
+    .field:focus, .field:focus-within{
         border-left: 3px solid darkorange;
     }
     label, input {
         transition: all 0.2s;
         touch-action: manipulation;
-        font-size: 0.9em;
     }
 
     input {
-        font-size: 1.2em;
         border: 0;
         border-bottom: 1px solid #ccc;
         -webkit-appearance: none;
@@ -142,14 +135,12 @@ export default {
     * field—to make sure it scales properly and doesn't wrap.
     */
     input:placeholder-shown + label {
-        /* cursor: text; */
         max-width: 66.66%;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         transform-origin: left bottom;
-        transform: translate(0, 2.125rem) scale(1.5);
-        
+        transform: translate(0, 2.125rem) scale(1.5); 
     }
     /**
     * By default, the placeholder should be transparent. Also, it should 
