@@ -1,41 +1,40 @@
 <template>
-    <main class="">
-        <div class="mt-32 grid grid-cols-6 ">
-            <div class="col-start-2 col-span-4 h-auto ">
-                <div class="bg-white grid grid-cols-3 shadow-2x">
-                    <div class="col-span-1" id="leftImg">
-                        <!-- <img class="" width="300" height="500" src="../assets/images/login.png" alt="unizik picture"> -->
+    <main class="flex justify-center items-center h-screen text-noto-sans">
+        <!-- <div class=""> -->
+            <!-- <div class="h-auto "> -->
+                <div class="bg-white shadow-2x w-10/12 mx-auto">
+                    <div class="h-20" id="leftImg">
                     </div>
-                    <div class="col-span-2">
+                    <div class="p-5">
                         <div class="">
-                            <p class="text-right p-10 pr-20">LOGIN</p>
+                            <p class="text-right p-8">LOGIN</p>
                         </div>
-                        <div class="px-40 grid grid-cols-7 mb-10">
-                            <img src="../assets/images/uniziklogo.png" class="col-start-2 col-span-1 text-right" alt="unizik picture" width="30" height="50">
-                            <h1 class="col-span-4 font-bold text-3xl mt-2 text-gray-700" >UNIZIK HOSTELS</h1>
+                        <div class="flex justify-center space-x-2">
+                            <img src="../assets/images/uniziklogo.png" class="text-right" alt="unizik picture" width="30" height="50">
+                            <h1 class="font-bold text-3xl text-gray-700 mt-2">UNIZIK HOSTELS</h1>
                         </div>
-                        <div class="px-40 ">
+                        <div class="mt-8">
                             <p class="text-gray-600">
                                 Register or Login to book a room for either yourself or your ward for the next academic session
                             </p>
                         </div>
-                        <form class="px-40 pt-5" action="#" @submit.prevent>
+                        <form class="mt-5" action="#" @submit.prevent>
                             <div class="field">
-                                <input class="text-gray-600 p-2" type="text" name="regNumber" id="regNumber" placeholder="2020364386">
-                                <label for="regNumber" class="text-gray-600 p-1">Reg Number</label>
+                                <input class="text-gray-600" type="text" name="regNumber" id="regNumber" placeholder="2020364386">
+                                <label for="regNumber" class="text-gray-600 p-2 text-xs font-thin">Reg Number</label>
                             </div>
                             <div class="field">
-                                <input class="text-gray-600 p-2" type="text" name="password" id="password" placeholder="*******">
-                                <label for="password" class="text-gray-600 p-1">Password</label>
+                                <input class="text-gray-600" type="text" name="password" id="password" placeholder="*******">
+                                <label for="password" class="text-gray-600">Password</label>
                             </div>
-                            <div class="mt-10 mb-10 flex justify-end">
+                            <div class="">
                                 <button type="submit" @click="login()">
                                     LOGIN
                                     <i class="fa fa-sign-in-alt text-orange-700"></i>
                                 </button>
                             </div>
                         </form>
-                        <div class="pl-8 mb-5">
+                        <div class="">
                             <p class="text-gray-600">
                                 Don't have account? 
                                 <router-link to="/signup">Sign up</router-link>
@@ -43,8 +42,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            <!-- </div> -->
+        <!-- </div> -->
     </main>
 </template>
 
@@ -65,13 +64,6 @@ export default {
 
 <style scoped>
     main{
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 100vh;
-        min-height:100vh;
         background: linear-gradient(rgba(26, 13, 1, 0.76), rgba(20, 10, 1, 0.856)), url('../assets/images/slide1.png');
         background-size:cover;
     }
@@ -84,8 +76,6 @@ export default {
         display: flex;
         flex-flow: column-reverse;
         margin-bottom: 1em;
-        /* border-left: 0; */
-        /* transition: border-left 1s; */
     }
     .field:focus, .field:focus-within{
         border-left: 3px solid darkorange;
@@ -122,14 +112,12 @@ export default {
     * field—to make sure it scales properly and doesn't wrap.
     */
     input:placeholder-shown + label {
-        /* cursor: text; */
         max-width: 66.66%;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         transform-origin: left bottom;
-        transform: translate(0, 2.125rem) scale(1.5);
-        
+        transform: translate(0, 2.125rem) scale(1.5); 
     }
     /**
     * By default, the placeholder should be transparent. Also, it should 
