@@ -6,8 +6,9 @@ module.exports = {
         colors: {
           "footer-bg": "#0C2034",
           "hr-color": "#377781",
-          "swizel-colorC": "#86E2EF",
-          "swizel-colorD": "#16829F"
+          "unidark": "#0C2034",
+          "uniblue": "#0278F2",
+          "unidarkblue": "#21618C"
         }
       },
       screens: {
@@ -27,7 +28,7 @@ module.exports = {
       },
       fontFamily: {
         // eslint-disable-next-line prettier/prettier
-        "unihostelFont": "Noto Sans",
+        "unihostelFont": "NotoSans",
         "poppins": "Poppins"
       }
     },
