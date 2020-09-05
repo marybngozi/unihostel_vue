@@ -1,6 +1,7 @@
 <template>
     <section>
-        <carousel paginationActiveColor="#377781"> 
+        <carousel paginationActiveColor="#377781" v-bind:per-page="1"
+        v-bind:autoplay="true"> 
             <slide>
                 <section id="slideA" class="w-screen h-screen p-4">
                     <h1 class="mt-20 px-4 text-5xl font-bold text-yellow-400">UNIVERSITY HOSTEL</h1>
