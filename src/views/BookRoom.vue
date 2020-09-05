@@ -1,7 +1,21 @@
 <template>
   <section class="">
     <Header active="bookroom" class="sticky top-0"/>
-    <Hostels />
+    <section class="mt-10 flex justify-evenly">
+      <aside class="w-1/6">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla eum animi dolores sequi molestiae velit est iure earum recusandae, dolor, commodi porro amet odit atque tempore debitis cupiditate vel ipsa?
+        </p>
+      </aside>
+      <main class="w-3/6">
+        <Hostels />
+      </main>
+      <aside class="w-1/6">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla eum animi dolores sequi molestiae velit est iure earum recusandae, dolor, commodi porro amet odit atque tempore debitis cupiditate vel ipsa?
+        </p>
+      </aside>
+    </section>
     <Footer />
   </section>
 </template>

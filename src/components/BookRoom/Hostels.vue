@@ -1,7 +1,7 @@
 <template>
     <section>
-        <div v-for="(hostel, index) in hostels" :key="index">
-            <Hostel :hostel="hostel" />
+        <div v-for="(hostel, index) in hostels" :key="index" class="mb-10">
+            <Hostel :hostel="hostel" class=""/>
         </div>
     </section>
 </template>
