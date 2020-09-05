@@ -17,7 +17,7 @@
                     </div>
                     <div class="">
                         <p class="text-black font-bold text-xs w-2/3">Here’s what you should know before buying travel…</p>
-                        <div class="text-xs text-gray-600 space-x-8 flex pt-2">
+                        <div class="text-xs text-gray-500 space-x-8 flex pt-2">
                             <div class="flex space-x-2">
                                 <i class="fa fa-user"></i>
                                  <p>Jessica Tempers</p>
@@ -42,7 +42,7 @@
                     </div>
                     <div class="">
                         <p class="text-black font-bold text-xs w-2/3">Here’s what you should know before buying travel…</p>
-                        <div class="text-xs text-gray-600 space-x-8 flex pt-2">
+                        <div class="text-xs text-gray-500 space-x-8 flex pt-2">
                             <div class="flex space-x-2">
                                 <i class="fa fa-user"></i>
                                  <p>Jessica Tempers</p>
@@ -67,7 +67,7 @@
                     </div>
                     <div class="">
                         <p class="text-black font-bold text-xs w-2/3">Here’s what you should know before buying travel…</p>
-                        <div class="text-xs text-gray-600 space-x-8 flex pt-2">
+                        <div class="text-xs text-gray-500 space-x-8 flex pt-2">
                             <div class="flex space-x-2">
                                 <i class="fa fa-user"></i>
                                  <p>Jessica Tempers</p>
