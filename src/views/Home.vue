@@ -5,6 +5,7 @@
     <Features />
     <Tour />
     <Testimony />
+    <HostelLife />
     <Footer />
   </div>
 </template>
@@ -16,6 +17,7 @@ import Jumbotron from '@/components/Home/Jumbotron.vue'
 import Features from '@/components/Home/Features.vue'
 import Tour from '@/components/Home/Tour.vue'
 import Testimony from '@/components/Home/Testimony.vue'
+import HostelLife from '@/components/Home/HostelLife.vue'
 import Footer from '@/components/Footer.vue';
 
 export default {
@@ -26,6 +28,7 @@ export default {
     Features,
     Tour,
     Testimony,
+    HostelLife,
     Footer
   }
 }
