@@ -8,7 +8,8 @@ module.exports = {
           "hr-color": "#377781",
           "unidark": "#0C2034",
           "uniblue": "#0278F2",
-          "unidarkblue": "#21618C"
+          "unidarkblue": "#21618C",
+          "uniyellow": "#F0FF00"
         }
       },
       screens: {
@@ -28,7 +29,7 @@ module.exports = {
       },
       fontFamily: {
         // eslint-disable-next-line prettier/prettier
-        "unihostelFont": "NotoSans",
+        "unihostelFont": '"Noto Sans"',
         "poppins": "Poppins"
       }
     },
