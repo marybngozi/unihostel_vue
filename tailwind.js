@@ -9,7 +9,8 @@ module.exports = {
           "unidark": "#0C2034",
           "uniblue": "#0278F2",
           "unidarkblue": "#21618C",
-          "uniyellow": "#F0FF00"
+          "uniyellow": "#F0FF00",
+          "uniash": "#F2F8FE"
         }
       },
       screens: {
