@@ -3,6 +3,7 @@
     <Header active="home" class="sticky top-0"/>
     <Jumbotron />
     <Features />
+    <Tour />
     <Footer />
   </div>
 </template>
@@ -12,6 +13,7 @@
 import Header from '@/components/Header.vue';
 import Jumbotron from '@/components/Home/Jumbotron.vue'
 import Features from '@/components/Home/Features.vue'
+import Tour from '@/components/Home/Tour.vue'
 import Footer from '@/components/Footer.vue';
 
 export default {
@@ -20,6 +22,7 @@ export default {
     Header,
     Jumbotron,
     Features,
+    Tour,
     Footer
   }
 }
