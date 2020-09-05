@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import Hostel from "@/components/Hostel.vue"
+import Hostel from "@/components/BookRoom/Hostel.vue"
 export default {
     name: "Hostels",
     components: {

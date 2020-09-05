@@ -1,12 +1,12 @@
 <template>
     <div>
         <!-- Images carousel sildes -->
-        <div class="">
-            <div class="" v-for="(image, index) in hostel.images" :key="index">
+        <carousel class="">
+            <slide class="" v-for="(image, index) in hostel.images" :key="index">
                 <img :src="image.url" :alt="image.title">
                 <p class="text-center">{{ image.title }}</p>
-            </div>
-        </div>
+            </slide>
+        </carousel>
 
         <!-- Description and buttons -->
         <div class="">
@@ -24,8 +24,12 @@
 </template>
 
 <script>
+import { Carousel, Slide } from "vue-carousel";
 export default {
     name: "Hostel",
+    components: {
+        Carousel, Slide
+    },
     props: {
         hostel: {
             type: Object

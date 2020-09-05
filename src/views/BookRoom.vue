@@ -8,7 +8,7 @@
 
 <script>
 import Header from '@/components/Header.vue'
-import Hostels from "@/components/Hostels.vue"
+import Hostels from "@/components/BookRoom/Hostels.vue"
 import Footer from "@/components/Footer.vue"
 export default {
   name: 'BookRoom',
