@@ -6,10 +6,10 @@
     </div>
     <nav class="flex items-center justify-between flex-wrap bg-white p-6">
       <div class="flex justify-evenly space-x-4 items-center flex-shrink-0 text-white">
-        <a href="/"> <img class="xs:w-10 md:w-16" src="../assets/images/uniziklogo.png"/></a>
+        <a href="/" alt="logo"> <img class="xs:w-10 md:w-12" src="../assets/images/uniziklogo.png"/></a>
         <div class="font-medium">
-            <h1 class="text-unidark text-sm md:text-2xl uppercase">Nnamdi Azikiwe University</h1>
-            <h1 class="text-unidark text-sm md:text-2xl uppercase">Hostel</h1>
+            <h1 class="text-unidark text-sm md:text-xl uppercase">Nnamdi Azikiwe University</h1>
+            <h1 class="text-unidark text-sm md:text-xl uppercase">Hostel</h1>
         </div>
         
       </div>
@@ -36,32 +36,40 @@
             Home
           </a>
           <a
-            href="/about"
+            href="/process"
             class="p-3 xs:flex xs:justify-center block mt-4 lg:inline-block lg:mt-0 text-unidark hover:border-b-2 md:mr-4"
-            :class="active === 'about' ? 'active' : 'notActive'"
+            :class="active === 'process' ? 'active' : 'notActive'"
           >
-            About Us
+            How it Works
           </a>
           <a
-            href="/products"
+            href="/book-room"
             class="p-3 xs:flex xs:justify-center block mt-4 lg:inline-block lg:mt-0 text-unidark hover:border-b-2 md:mr-4"
-            :class="active === 'products' ? 'active' : 'notActive'"
+            :class="active === 'bookroom' ? 'active' : 'notActive'"
           >
-            Products
+            Book Room
           </a>
           <a
-            href="/services"
-            class="p-3 xs:flex xs:justify-center block mt-4 lg:inline-block lg:mt-0 text-unidark hover:border-b-2 md:mr-4"
-            :class="active === 'services' ? 'active' : 'notActive'"
-          >
-            Services
-          </a>
-          <a
-            href="contact"
+            href="/contact"
             class="p-3 xs:flex xs:justify-center block mt-4 lg:inline-block lg:mt-0 text-unidark hover:border-b-2 md:mr-4"
             :class="active === 'contact' ? 'active' : 'notActive'"
           >
             Contact
+          </a>
+          <a
+            href="faq"
+            class="p-3 xs:flex xs:justify-center block mt-4 lg:inline-block lg:mt-0 text-unidark hover:border-b-2 md:mr-4"
+            :class="active === 'signup' ? 'active' : 'notActive'"
+          >
+            FAQ
+          </a>
+          <a
+            href="login"
+            v-show="!loggedIn"
+            class="p-3 xs:flex xs:justify-center block mt-4 lg:inline-block lg:mt-0 text-unidark hover:border-b-2 md:mr-4"
+            :class="active === 'login' ? 'active' : 'notActive'"
+          >
+            Login
           </a>
           <div class="p-1 mt-4 w-full lg:mt-0 xs:hidden sm:hidden lg:hidden md:flex justify-center items-center rounded-full border-unidark border md:mr-40">
           <input

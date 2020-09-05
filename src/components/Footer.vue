@@ -13,10 +13,19 @@
                 </h1>
                 <div class="mt-8 p-4">
                     <div class="p-2">
-                        <button class="bg-blue-500 rounded-lg p-4 w-40 text-white">SIGN UP</button>
+                        <router-link to="/signup">
+                            <button class="bg-blue-500 rounded-lg p-4 w-40 text-white">
+                                SIGN UP
+                            </button>
+                        </router-link>
+                        
                     </div>
                     <div class="p-2">
-                        <button class="bg-orange-500 rounded-lg p-4 w-40 text-white">LOGIN</button>
+                        <router-link to="/login">
+                            <button class="bg-orange-500 rounded-lg p-4 w-40 text-white">
+                                LOGIN
+                            </button>
+                        </router-link>
                     </div>
                 </div>
                 

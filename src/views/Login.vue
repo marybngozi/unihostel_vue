@@ -10,8 +10,10 @@
                             <p class="text-right p-8 md:p-5 text-gray-600 font-regular">LOGIN</p>
                         </div>
                         <div class="flex justify-center space-x-2">
-                            <img src="../assets/images/uniziklogo.png" class="text-right" alt="unizik picture" width="30" height="50">
-                            <h1 class="font-bold text-2xl text-gray-700 mt-2">UNIZIK HOSTELS</h1>
+                            <a href="/" class="flex justify-center space-x-2">
+                                <img src="../assets/images/uniziklogo.png" class="text-right" alt="unizik picture" width="30" height="50">
+                                <h1 class="font-bold text-2xl text-gray-700 mt-2">UNIZIK HOSTELS</h1>
+                            </a>
                         </div>
                         <div class="mt-8">
                             <p class="text-gray-600">
@@ -35,7 +37,7 @@
                             </div>
                         </form>
                         <div class="mt-8">
-                            <p class="text-gray-600">
+                            <p class="text-sm text-gray-600">
                                 Don't have account? 
                                 <router-link to="/signup">Sign up</router-link>
                             </p>
@@ -64,7 +66,7 @@ export default {
 
 <style scoped>
     main{
-        background: linear-gradient(rgba(26, 13, 1, 0.76), rgba(20, 10, 1, 0.856)), url('../assets/images/slide1.png');
+        background: linear-gradient(#154e7496, #02131f), url('../assets/images/slide1.png');
         background-size: cover;
     }
     #leftImg{

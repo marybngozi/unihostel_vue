@@ -9,9 +9,11 @@
                         <div class="">
                             <p class="text-right p-8 md:p-5 text-gray-600 font-regular">REGISTER</p>
                         </div>
-                        <div class="flex justify-center space-x-2">
-                            <img src="../assets/images/uniziklogo.png" class="text-right" alt="unizik picture" width="30" height="50">
-                            <h1 class="font-bold text-2xl text-gray-700 mt-2">UNIZIK HOSTELS</h1>
+                        <div>
+                            <a href="/" class="flex justify-center space-x-2">
+                                <img src="../assets/images/uniziklogo.png" class="text-right" alt="unizik picture" width="30" height="50">
+                                <h1 class="font-bold text-2xl text-gray-700 mt-2">UNIZIK HOSTELS</h1>
+                            </a>
                         </div>
                         <div class="mt-8">
                             <p class="text-gray-600">
@@ -20,7 +22,7 @@
                         </div>
                         <form class="mt-5" action="#" @submit.prevent>
                             <div class="field">
-                                <input class="text-gray-600" type="text" name="regNumber" id="regNumber" placeholder="2020364386">
+                                <input class="text-gray-600 pl-5" type="text" name="regNumber" id="regNumber" placeholder="2020364386">
                                 <label for="regNumber" class="text-gray-600 p-2 text-xs font-thin">Reg Number</label>
                             </div>
                             <div v-if="reqValidated">
@@ -34,18 +36,18 @@
                                 </div>
                             </div>
                             <div class="flex justify-end mt-10">
-                                <button v-if="!reqValidated"  type="submit" @click="checkRegNumber()">
+                                <button v-show="!reqValidated"  type="submit" @click="checkRegNumber()">
                                     Next
                                     <i class="fa fa-arrow-right text-orange-700"></i>
                                 </button>
-                                <button v-if="reqValidated"  type="submit" @click="register()">
+                                <button v-show="reqValidated"  type="submit" @click="register()">
                                     REGISTER
                                     <i class="fa fa-sign-in-alt text-orange-700"></i>
                                 </button>
                             </div>
                         </form>
                         <div class="mt-8">
-                            <p class="text-gray-600">
+                            <p class="text-sm text-gray-600">
                                 Already have an account?  
                                 <router-link to="/login">Login</router-link>
                             </p>
@@ -88,7 +90,7 @@ export default {
 
 <style scoped>
     main{
-        background: linear-gradient(rgba(26, 13, 1, 0.76), rgba(20, 10, 1, 0.856)), url('../assets/images/slide1.png');
+        background: linear-gradient(#154e7496, #02131f), url('../assets/images/slide1.png');
         background-size: cover;
     }
     #leftImg{
