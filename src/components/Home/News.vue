@@ -5,18 +5,18 @@
             <h2 class="text-black text-center text-2xl font-semibold">Latest From News</h2>
         </div>
 
-        <div class="md:flex md:justify-center">
+        <div class="md:flex md:justify-center md:flex-wrap">
             <div class="p-4 mx-auto md:mx-0">
-                <div class="w-64 h-40 overflow-hidden">
+                <div class="w-64 h-40 mx-auto md:mx-0 overflow-hidden">
                     <img src="../../assets/images/news1.png" alt="">
                 </div>
-                <div class="flex justify-between py-4 w-full space-x-4">
+                <div class="flex justify-between py-4 md:px-0 w-64 mx-auto md:mx-0 space-x-4">
                     <div class="bg-blue-100">
                         <p class="text-unidarkblue font-extrabold px-3 pt-1 text-xl flex items-center">18</p>
                         <p class="text-xs font-thin px-3 pb-1 flex items-center">AUG</p>
                     </div>
                     <div class="">
-                        <p class="text-black font-bold text-xs w-2/3">Here’s what you should know before buying travel…</p>
+                        <p class="text-black font-bold text-xs">Here’s what you should know before buying travel…</p>
                         <div class="text-xs text-gray-500 space-x-8 flex pt-2">
                             <div class="flex space-x-2">
                                 <i class="fa fa-user"></i>
@@ -32,16 +32,16 @@
             </div>
 
             <div class="p-4 mx-auto md:mx-0">
-                <div class="w-64 h-40 overflow-hidden">
+                <div class="w-64 h-40 mx-auto md:mx-0 overflow-hidden">
                     <img src="../../assets/images/news2.png" alt="">
                 </div>
-                <div class="flex justify-between py-4 w-full space-x-4">
+                <div class="flex justify-between py-4 w-64 mx-auto md:mx-0 space-x-4">
                     <div class="bg-blue-100">
                         <p class="text-unidarkblue font-extrabold px-3 pt-1 text-xl flex items-center">27</p>
                         <p class="text-xs font-thin px-3 pb-1 flex items-center">SEP</p>
                     </div>
                     <div class="">
-                        <p class="text-black font-bold text-xs w-2/3">Here’s what you should know before buying travel…</p>
+                        <p class="text-black font-bold text-xs">Here’s what you should know before buying travel…</p>
                         <div class="text-xs text-gray-500 space-x-8 flex pt-2">
                             <div class="flex space-x-2">
                                 <i class="fa fa-user"></i>
@@ -57,10 +57,10 @@
             </div>
 
             <div class="p-4 mx-auto md:mx-0">
-                <div class="w-64 h-40 overflow-hidden">
+                <div class="w-64 h-40 mx-auto md:mx-0 overflow-hidden">
                     <img src="../../assets/images/news3.png" alt="">
                 </div>
-                <div class="flex justify-between py-4 w-full space-x-4">
+                <div class="flex justify-between py-4 w-64 mx-auto md:mx-0 space-x-4">
                     <div class="bg-blue-100">
                         <p class="text-unidarkblue font-extrabold px-3 pt-1 text-xl flex items-center">09</p>
                         <p class="text-xs font-thin px-3 pb-1 flex items-center">OCT</p>
