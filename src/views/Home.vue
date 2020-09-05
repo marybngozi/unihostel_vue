@@ -6,6 +6,7 @@
     <Tour />
     <Testimony />
     <HostelLife />
+    <News />
     <Footer />
   </div>
 </template>
@@ -18,6 +19,7 @@ import Features from '@/components/Home/Features.vue'
 import Tour from '@/components/Home/Tour.vue'
 import Testimony from '@/components/Home/Testimony.vue'
 import HostelLife from '@/components/Home/HostelLife.vue'
+import News from '@/components/Home/News.vue'
 import Footer from '@/components/Footer.vue';
 
 export default {
@@ -29,6 +31,7 @@ export default {
     Tour,
     Testimony,
     HostelLife,
+    News,
     Footer
   }
 }
