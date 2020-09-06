@@ -1,6 +1,7 @@
 <template>
   <section class="">
     <Header active="bookroom" class="sticky top-0"/>
+    <h2 class="text-center uppercase">Hostels</h2>
     <section class="mt-10 flex justify-evenly">
       <aside class="w-1/6">
         <p>
