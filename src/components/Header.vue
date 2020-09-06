@@ -4,7 +4,7 @@
     <div class="w-full flex justify-center items-center h-12 text-sm bg-unidarkblue text-white">
         <p class="p-2 font-thin">DISCIPLINE, SELF RELIANCE & EXCELLENCE</p>
     </div>
-    <nav class="flex items-center justify-between flex-wrap bg-white p-6">
+    <nav class="flex items-center justify-between flex-wrap bg-white p-4">
       <div class="flex justify-evenly space-x-4 items-center flex-shrink-0 text-white">
         <a href="/" alt="logo"> <img class="xs:w-10 md:w-12" src="../assets/images/uniziklogo.png"/></a>
         <div class="font-medium">
