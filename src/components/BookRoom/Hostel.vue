@@ -1,34 +1,65 @@
 <template>
-    <div class="rounded shadow-lg py-3 overflow-hidden">
+    <div class="rounded-lg border shadow-lg pb-3 overflow-hidden">
         <!-- Images carousel sildes -->
         <carousel 
-            class="" per-page="1" 
+            class="" :per-page="1" 
             :autoplay="true" 
             :speed="1000"
             :autoplayTimeout="3000"
             paginationPosition="bottom-overlay" 
             :loop="true">
-            <slide class="" v-for="(image, index) in hostel.images" :key="index">
-                <div class="rounded h-img">
-                    <img :src="image.url" :alt="image.title" class="">
+            <slide class="h-full" v-for="(image, index) in hostel.images" :key="index" :tagName="image.title">
+                <div class="" style="height:20rem">
+                    <img :src="image.url" :alt="image.title" class="w-full h-full object-cover object-center">
                 </div>
-                <h5 class="text-right text-white font-bold text-xs uppercase shadow py-1 pr-2">{{ image.title }}</h5>
+                
+                <h5 class="text-right text-black font-thin text-xs uppercase py-1 pr-2">{{ image.title }}</h5>
             </slide>
         </carousel>
 
-        <!-- Title Description and buttons -->
+        <!-- Title and buttons -->
         <div class="p-4">
-            <h4 class="text-center uppercase text-xl text-gray-700 font-bold mx-auto">
-                {{ hostel.name }}
-            </h4>
-            <div class="text-unidarkblue-700">
-                <p class="">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi illum qui quisquam consectetur quam debitis neque iure, adipisci quibusdam culpa reiciendis eos reprehenderit nobis quod tenetur repudiandae totam, distinctio facilis.
+            <div class="flex justify-between">
+                <h4 class="uppercase text-md text-unidarkblue font-bold">{{ hostel.name }}</h4>
+                <div class="space-x-1">
+                    <span class="inline-block justify-end text-uniorange text-xs" v-for="(r, i) in 5" :key="i">
+                        <i class="fa fa-star" v-if="r<=hostel.rating"></i>
+                        <i class="far fa-star" v-else></i>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Description -->
+            <div class="text-gray-700">
+                <p class="text-sm font-light text-justify">
+                    {{ hostel.description }}
                 </p>
             </div>
 
-            <div class="">
+            <!-- Icons description -->
+            <div class="flex justify-center space-x-10 mt-3 px-3">
+                <div class="space-x-1 text-gray-600 text-xs">
+                    <i class="fa fa-money-bill text-gray-500"></i>
+                    <span>{{hostel.priceRange}}</span>
+                </div>
+                <div class="space-x-1 text-gray-600 text-xs">
+                    <i class="fa fa-bed text-gray-500"></i>
+                    <span>{{hostel.capacity}}</span>
+                </div>
+                <div class="space-x-1 text-gray-600 text-xs" >
+                    <i class="fa fa-home text-gray-500" title="Price range"></i>
+                    <span class="uppercase text-xs">{{hostel.category}}</span>
+                </div>
+            </div>
 
+            <!-- View more button -->
+            <div class="flex justify-end xs:mt-3 md:mt-2">
+                <button class="bg-transparent outline-none hover:outline-none focus:outline-none text-unidarkblue">
+                    <router-link to="/room">
+                        <span class="px-3 font-semibold">View</span>
+                        <i class="fa fa-long-arrow-alt-right font-thin w-48"></i>
+                    </router-link>
+                </button>
             </div>
         </div>
     </div>
@@ -49,9 +80,3 @@ export default {
 
 }
 </script>
-
-<style scoped>
-    .h-img{
-        height: 400px;
-    }
-</style>

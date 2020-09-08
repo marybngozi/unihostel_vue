@@ -1,10 +1,10 @@
 /* eslint-disable prettier/prettier */
 <template>
-  <header id="nav" class="unihostelFont">
+  <header id="nav" class="unihostelFont shadow-xs">
     <div class="w-full flex justify-center items-center h-12 text-sm bg-unidarkblue text-white">
         <p class="p-2 font-thin">DISCIPLINE, SELF RELIANCE & EXCELLENCE</p>
     </div>
-    <nav class="flex items-center justify-between flex-wrap bg-white p-6">
+    <nav class="flex items-center justify-between flex-wrap bg-white p-4">
       <div class="flex justify-evenly space-x-4 items-center flex-shrink-0 text-white">
         <a href="/" alt="logo"> <img class="xs:w-10 md:w-12" src="../assets/images/uniziklogo.png"/></a>
         <div class="font-medium">
@@ -43,9 +43,9 @@
             How it Works
           </a>
           <a
-            href="/book-room"
+            href="/hostels"
             class="p-3 xs:flex xs:justify-center block mt-4 lg:inline-block lg:mt-0 text-unidark hover:border-b-2 md:mr-4"
-            :class="active === 'bookroom' ? 'active' : 'notActive'"
+            :class="active === 'hostels' ? 'active' : 'notActive'"
           >
             Book Room
           </a>
