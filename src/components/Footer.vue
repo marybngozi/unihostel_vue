@@ -98,7 +98,7 @@
         
         <div class="flex justify-center items-center border-t border-gray-700">
             <p class="text-gray-500 p-4">
-                © 2019, Nnamdi Azikiwe University. Awka, All rights reserved.
+                © {{new Date().getFullYear()}}, Nnamdi Azikiwe University. Awka, All rights reserved.
             </p>
         </div>
     </footer>
