@@ -66,7 +66,7 @@
                         <p class="text-xs font-thin px-3 pb-1 flex items-center">OCT</p>
                     </div>
                     <div class="">
-                        <p class="text-black font-bold text-xs w-2/3">Here’s what you should know before buying travel…</p>
+                        <p class="text-black font-bold text-xs">Here’s what you should know before buying travel…</p>
                         <div class="text-xs text-gray-500 space-x-8 flex pt-2">
                             <div class="flex space-x-2">
                                 <i class="fa fa-user"></i>
