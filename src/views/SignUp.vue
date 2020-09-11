@@ -83,6 +83,7 @@ export default {
         },
         register() {
             console.log("Hello World")
+            this.$router.push('/');
         }
     }
 }

@@ -1,13 +1,29 @@
 <template>
     <section class="">
         <Header active="bookroom" class="sticky top-0"/>
-        <h2 class="text-center uppercase font-bold">Room</h2>
-        <section class="mt-10 flex xs:flex-col md:flex-row">
+        <section class="mt-5 flex xs:flex-col md:flex-row">
             <aside class="md:w-2/12 md:flex-none md:order-none xs:w-11/12 xs:mx-auto xs:mb-10 sm:mb-0">
                 <AsideLeft />
             </aside>
             <main class="md:w-7/12 md:flex-none md:order-none xs:w-11/12 xs:mx-auto xs:mb-8 sm:mb-0 xs:order-first">
-                <RoomDetails :room="room"/>
+                <RoomDetails 
+                v-if="display == 'room'"
+                :room="room"
+                @show-bed="showBed"
+                @back-order="backOrder"/>
+
+                <BedDetails 
+                v-if="display == 'bed'"
+                :bed="selectedBed"
+                @show-room="showRoom"
+                class="mt-5"/>
+
+                <BackOrder 
+                v-if="display == 'backOrder'"
+                :bed="selectedBed"
+                @show-room="showRoom"
+                class="mt-5"/>
+
             </main>
             <aside class="md:w-2/12 md:flex-none md:order-none xs:w-11/12 xs:mx-auto xs:mb-10 sm:mb-0 xs:order-last">
                 <AsideRight />
@@ -20,6 +36,8 @@
 <script>
 import Header from '@/components/Header.vue'
 import RoomDetails from "@/components/BookRoom/RoomDetails.vue"
+import BedDetails from "@/components/BookRoom/BedDetails.vue"
+import BackOrder from "@/components/BookRoom/BackOrder.vue"
 import AsideLeft from "@/components/AsideLeft.vue"
 import AsideRight from "@/components/AsideRight.vue"
 import Footer from "@/components/Footer.vue"
@@ -29,12 +47,16 @@ export default {
     components: {
         Header,
         RoomDetails,
+        BedDetails,
+        BackOrder,
         AsideLeft,
         AsideRight,
         Footer
     }, 
     data() {
         return {
+            display: 'room',
+            selectedBed: null,
             room: {
                 roomName: "A100",
                 // roomPlan: "https://res.cloudinary.com/dnbbhvcbt/image/upload/v1599437871/Room_structure-big_yplsjp.png",
@@ -43,25 +65,33 @@ export default {
                 noOfBeds: "4",
                 beds: [
                     {
+                        id: "123",
                         name: "bed1",
+                        type: "bunk",
                         status: 1,
                         price: "30000",
 
                     },
                     {
+                        id: "345",
                         name: "bed2",
+                        type: "bunk",
                         status: 0,
                         price: "30000",
 
                     },
                     {
+                        id: "678",
                         name: "bed3",
+                        type: "single",
                         status: 1,
                         price: "30000",
 
                     },
                     {
+                        id: "901",
                         name: "bed4",
+                        type: "joined",
                         status: 1,
                         price: "30000",
 
@@ -69,6 +99,23 @@ export default {
                 ]
             }
         }
+    },
+    methods: {
+        showBed(bedId) {
+            console.log(bedId);
+            this.selectedBed = this.room.beds.find(bed => bed.id == bedId)
+            this.display = 'bed'
+        },
+
+        showRoom() {
+            this.display = 'room'
+        },
+
+        backOrder(bedId) {
+            this.selectedBed = this.room.beds.find(bed => bed.id == bedId)
+            this.display = 'backOrder'
+            console.log(bedId);
+        } 
     }
 }
 </script>

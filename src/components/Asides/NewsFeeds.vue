@@ -10,7 +10,7 @@
 
         <div class="mt-8">
             <h3 class="font-bold text-md text-gray-700">
-                Announcement 
+                <span>Announcement</span><br> 
                 <small>Chike Okoli Hostel</small>
             </h3>
             <p class="text-justify text-xs text-gray-600">

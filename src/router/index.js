@@ -58,6 +58,14 @@ Vue.use(VueRouter)
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "signup" */ '../views/SignUp.vue')
   },
+  {
+    path: '/faq',
+    name: 'FAQ',
+    // route level code-splitting
+    // this generates a separate chunk (signup.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "signup" */ '../views/FAQ.vue')
+  },
 ]
 
 const router = new VueRouter({

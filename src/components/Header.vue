@@ -57,14 +57,14 @@
             Contact
           </a>
           <a
-            href="faq"
+            href="/faq"
             class="p-3 xs:flex xs:justify-center block mt-4 lg:inline-block lg:mt-0 text-unidark hover:border-b-2 md:mr-4"
-            :class="active === 'signup' ? 'active' : 'notActive'"
+            :class="active === 'faq' ? 'active' : 'notActive'"
           >
             FAQ
           </a>
           <a
-            href="login"
+            href="/login"
             v-show="!loggedIn"
             class="p-3 xs:flex xs:justify-center block mt-4 lg:inline-block lg:mt-0 text-unidark hover:border-b-2 md:mr-4"
             :class="active === 'login' ? 'active' : 'notActive'"

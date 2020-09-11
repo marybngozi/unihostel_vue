@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-footer-bg block">
+    <footer class="bg-footer-bg block mt-10">
         <div class="flex justify-center items-center p-4 border-gray-700 border-b">
             <p class="text-white p-8 font-bold text-xl">
                 UNDERGO YOUR STUDIES IN A PEACEFUL ACCOMMODATION

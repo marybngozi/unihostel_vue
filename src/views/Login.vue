@@ -58,7 +58,8 @@ export default {
     },
     methods: {
         login() {
-            console.log("Hello World")
+            console.log("Hello World");
+            this.$router.push('/');
         }
     }
 }
