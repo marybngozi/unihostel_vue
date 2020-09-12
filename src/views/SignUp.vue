@@ -98,11 +98,6 @@ export default {
 </script>
 
 <style scoped>
-  main{
-    /* background: linear-gradient(#154e7496, #02131f), url('../assets/images/slide1.png');
-    background-size: cover; */
-  }
-
   #leftImg{
     background: url('../assets/images/login.png');
     background-size: cover;
