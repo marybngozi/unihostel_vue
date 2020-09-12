@@ -8,8 +8,8 @@
       <div class="flex justify-evenly space-x-4 items-center flex-shrink-0 text-white">
         <a href="/" alt="logo"> <img class="xs:w-10 md:w-12" src="../assets/images/uniziklogo.png"/></a>
         <div class="font-medium">
-            <h1 class="text-unidark text-sm md:text-xl uppercase">Nnamdi Azikiwe University</h1>
-            <h1 class="text-unidark text-sm md:text-xl uppercase">Hostel</h1>
+          <h1 class="text-unidark text-sm md:text-xl uppercase">Nnamdi Azikiwe University</h1>
+          <h1 class="text-unidark text-sm md:text-xl uppercase">Hostel</h1>
         </div>
         
       </div>
@@ -67,9 +67,10 @@
             href="/login"
             v-show="!loggedIn"
             class="p-3 xs:flex xs:justify-center block mt-4 lg:inline-block lg:mt-0 text-unidark hover:border-b-2 md:mr-4"
-            :class="active === 'login' ? 'active' : 'notActive'"
+            :class="(active === 'login' || active === 'signup') ? 'active' : 'notActive'"
           >
-            Login
+            <span v-if="active != 'signup'">Login</span>
+            <span v-if="active == 'signup'">Sign Up</span>
           </a>
           <div class="p-1 mt-4 w-full lg:mt-0 xs:hidden sm:hidden lg:hidden md:flex justify-center items-center rounded-full border-unidark border md:mr-40">
           <input

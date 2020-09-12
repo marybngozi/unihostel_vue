@@ -16,7 +16,7 @@
                             <router-link to="/hostels">BOOK A ROOM</router-link>
                         </button>
                         <button class="bg-white text-blue-600 rounded-lg text-xs p-4 w-36 h-10 flex items-center justify-center">
-                            MAKE ENQUIRY
+                            <router-link to="/contact">MAKE ENQUIRY</router-link>
                         </button>
                     </div>
                 </section>
@@ -30,7 +30,7 @@
                             <router-link to="/hostels">BOOK A ROOM</router-link>
                         </button>
                         <button class="bg-white text-blue-600 rounded-lg text-xs p-4 w-36 h-10 flex items-center justify-center">
-                            MAKE ENQUIRY
+                            <router-link to="/contact">MAKE ENQUIRY</router-link>
                         </button>
                     </div>
                 </section>
@@ -44,7 +44,7 @@
                             <router-link to="/hostels">BOOK A ROOM</router-link>
                         </button>
                         <button class="bg-white text-blue-600 rounded-lg text-xs p-4 w-36 h-10 flex items-center justify-center">
-                            MAKE ENQUIRY
+                            <router-link to="/contact">MAKE ENQUIRY</router-link>
                         </button>
                     </div>
                 </section>
