@@ -1,6 +1,6 @@
 <template>
     <footer class="bg-footer-bg block mt-10">
-        <div class="flex justify-center items-center p-4 border-gray-700 border-b">
+        <div class="flex justify-center items-center text-center p-4 border-gray-700 border-b">
             <p class="text-white p-8 font-thin tracking-widest text-2xl">
                 UNDERGO YOUR STUDIES IN A PEACEFUL ACCOMMODATION
             </p>
@@ -8,7 +8,7 @@
 
         <section class="flex justify-center flex-wrap p-4 lg:space-x-10 font-light">
             <div class="block p-4">
-                <h1 class="text-white flex justify-center">
+                <h1 class="text-white flex justify-start">
                     BOOK A ROOM TODAY
                 </h1>
                 <div class="mt-8">
@@ -60,7 +60,7 @@
                 <h1 class="text-white flex justify-start">
                     DAYS FOR REG
                 </h1>
-                <div class="text-gray-500 mt-8  text-left">
+                <div class="text-gray-500 mt-8 text-left">
                     <p class="p-1">Monday 11am-7pm</p>
                     <p class="p-1">Tuesday-Friday 11am-8pm</p>
                     <p class="p-1">Saturday 10am-6pm</p>
