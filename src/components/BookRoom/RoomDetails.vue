@@ -34,10 +34,10 @@
 
         <!-- Room table -->
         <div class="">
-            <table class="table table-auto mx-auto w-11/12 mb-10">
+            <table class="table table-auto mx-auto w-11/12 mb-10 overflow-x-scroll">
                 <thead class="">
                     <tr class="text-xs text-left">
-                        <th class="px-1 py-2">S/N</th>
+                        <!-- <th class="px-1 py-2">S/N</th> -->
                         <th class="px-2 py-2">BED</th>
                         <th class="px-2 py-2">Status</th>
                         <th class="px-2 py-2">Amount</th>
@@ -47,7 +47,7 @@
                 </thead>
                 <tbody class="">
                     <tr class="text-xs hover:bg-gray-100 border-b border-gray-200 py-10" v-for="(bed, i) in room.beds" :key="i">
-                        <td class="px-1 py-2 ">{{ i+1 }}</td>
+                        <!-- <td class="px-1 py-2 ">{{ i+1 }}</td> -->
                         <td class="px-2 py-2 uppercase">{{bed.name}}</td>
                         <td class="px-2 py-2 ">
                             <span v-if="bed.status == 1">Empty</span>

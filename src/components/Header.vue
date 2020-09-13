@@ -13,7 +13,7 @@
         </div>
         
       </div>
-      <div class="block lg:hidden flex justify-between space-x-3">
+      <div class="block lg:hidden flex justify-between sm:space-x-3 xs:space-x-0">
         <!-- User pics medium screen -->
         <ProfileMenu
         class="mt-2"
@@ -21,7 +21,7 @@
         whdiv="h-8 w-8"
         />
         <button
-          class="flex items-center px-4 py-2 text-unidark hover:text-white hover:border-white focus:outline-none"
+          class="flex items-center px-2 py-2 text-unidark hover:text-white hover:border-white focus:outline-none"
           @click="toggleMenu"
         >
           <img src="../assets/images/menu-icon.svg" class="lg:h-10 lg:w-10 xs:w-6 xs:h-6" />
@@ -124,7 +124,7 @@ export default {
   data() {
     return {
       showMenu: false,
-      loggedIn: false,
+      loggedIn: true,
     };
   },
   created(){

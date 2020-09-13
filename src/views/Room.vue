@@ -1,6 +1,6 @@
 <template>
     <section class="">
-        <Header active="bookroom" class="sticky top-0"/>
+        <Header active="hostels" class="sticky top-0"/>
         <section class="mt-5 flex xs:flex-col md:flex-row">
             <aside class="md:w-2/12 md:flex-none md:order-none xs:w-11/12 xs:mx-auto xs:mb-10 sm:mb-0">
                 <AsideLeft />
