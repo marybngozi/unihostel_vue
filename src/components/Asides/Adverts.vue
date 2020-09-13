@@ -1,19 +1,40 @@
 <template>
     <!-- Make an Advert template later -->
     <div>
-        <div class="">
+        <div class="border-b-2 pb-2">
             <h3 class="font-bold text-md text-gray-700">Swizel Softcom</h3>
             <p class="text-justify text-xs text-gray-600">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nam consectetur dolorum. Consequuntur magnam sint odio rem, repellat, velit quos quod similique, ex consequatur quidem magni. Cumque dolorum error tenetur!
             </p>
         </div>
 
-        <div class="mt-8">
+        <div class="mt-8 border-b-2 pb-2">
             <h3 class="font-bold text-md text-gray-700">
-                Elmada Hostel
+                Pre Science Program
             </h3>
-            <p class="text-justify text-xs text-gray-600">
-                Spacious Room fro elegant studies, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quod blanditiis ab veritatis exercitationem. Eum eius deserunt vero cupiditate, rerum, quia eos.
+            <p class="text-justify text-xs text-gray-600 pb-0 mb-0">
+                Register and learn to gain admission into the univeristy easily, Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nihil optio ex vero provident consequuntur sed nostrum. Dolorem officia dignissimos.
+            </p>
+            <p class="text-right py-0">
+                <button class="bg-blue-500 p-1 border rounded-full text-xs">
+                    <span class="text-white pr-1">Click to Register</span>
+                    <span class="animate-ping"><i class="fa fa-angle-double-right"></i></span>
+                </button>
+            </p>
+        </div>
+
+        <div class="mt-8 border-b-2 pb-2">
+            <h3 class="font-bold text-md text-gray-700">
+                CEP Program
+            </h3>
+            <p class="text-justify text-xs text-gray-600 pb-0 mb-0">
+                Continue your education in unzik CEP, Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nihil optio ex vero provident consequuntur sed nostrum. Dolorem officia dignissimos.
+            </p>
+            <p class="text-right py-0">
+                <button class="bg-blue-500 p-1 border rounded-full text-xs">
+                    <span class="text-white pr-1">Click to Register</span>
+                    <span class="animate-ping"><i class="fa fa-angle-double-right"></i></span>
+                </button>
             </p>
         </div>
     </div>

@@ -69,6 +69,7 @@ export default {
                         name: "bed1",
                         type: "bunk",
                         status: 1,
+                        expiryDate: 0,
                         price: "30000",
 
                     },
@@ -77,6 +78,7 @@ export default {
                         name: "bed2",
                         type: "bunk",
                         status: 0,
+                        expiryDate: 1637362800000,
                         price: "30000",
 
                     },
@@ -84,7 +86,8 @@ export default {
                         id: "678",
                         name: "bed3",
                         type: "single",
-                        status: 1,
+                        status: 0,
+                        expiryDate: 1601247600000,
                         price: "30000",
 
                     },
@@ -93,6 +96,7 @@ export default {
                         name: "bed4",
                         type: "joined",
                         status: 1,
+                        expiryDate: 0,
                         price: "30000",
 
                     },

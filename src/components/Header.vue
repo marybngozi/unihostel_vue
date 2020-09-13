@@ -5,28 +5,36 @@
         <p class="p-2 font-thin">DISCIPLINE, SELF RELIANCE & EXCELLENCE</p>
     </div>
     <nav class="flex items-center justify-between flex-wrap bg-white p-4">
-      <div class="flex justify-evenly space-x-4 items-center flex-shrink-0 text-white">
-        <a href="/" alt="logo"> <img class="xs:w-10 md:w-12" src="../assets/images/uniziklogo.png"/></a>
+      <div class="flex justify-evenly md:space-x-4 xs:space-x-1 items-center flex-shrink-0 text-white">
+        <a href="/" alt="logo"> <img class="xs:w-8 md:w-12" src="../assets/images/uniziklogo.png"/></a>
         <div class="font-medium">
-          <h1 class="text-unidark text-sm md:text-xl uppercase">Nnamdi Azikiwe University</h1>
-          <h1 class="text-unidark text-sm md:text-xl uppercase">Hostel</h1>
+          <h1 class="text-unidark text-sm md:text-xl xs:text-xs uppercase">Nnamdi Azikiwe University</h1>
+          <h1 class="text-unidark text-sm md:text-xl xs:text-xs uppercase">Hostel</h1>
         </div>
         
       </div>
-      <div class="block lg:hidden">
+      <div class="block lg:hidden flex justify-between space-x-3">
+        <!-- User pics medium screen -->
+        <ProfileMenu
+        class="mt-2"
+        v-show="loggedIn"
+        whdiv="h-8 w-8"
+        />
         <button
-          class="flex items-center md:px-4 py-2 text-unidark hover:text-white hover:border-white"
+          class="flex items-center px-4 py-2 text-unidark hover:text-white hover:border-white"
           @click="toggleMenu"
         >
-          <img src="../assets/images/menu-icon.svg" />
+          <img src="../assets/images/menu-icon.svg" class="lg:h-10 lg:w-10 xs:w-6 xs:h-6" />
         </button>
+        <button v-if="showMenu" @click="showMenu = false" tabindex="-1" class="fixed inset-0 h-full w-full cursor-default"></button>
       </div>
+      
       <div
         class="w-full block flex-grow lg:flex lg:items-center lg:w-auto"
         :class="showMenu ? 'block' : 'hidden'"
       >
         <div
-          class="md:w-3/12 md:float-right text-sm block  lg:space-x-2 lg:flex-grow lg:flex lg:justify-center"
+          class="md:w-5/12 xs:w-8/12 xs:pb-5 xs:rounded xs:shadow-xl lg:shadow-none lg:pb-auto xs:absolute xs:right-0 xs:bg-white text-sm block lg:relative lg:space-x-2 lg:flex-grow lg:flex lg:justify-center"
         >
           <a
             href="/"
@@ -72,30 +80,42 @@
             <span v-if="active != 'signup'">Login</span>
             <span v-if="active == 'signup'">Sign Up</span>
           </a>
-          <div class="p-1 mt-4 w-full lg:mt-0 xs:hidden sm:hidden lg:hidden md:flex justify-center items-center rounded-full border-unidark border md:mr-40">
-          <input
-            class="xs:flex xs:justify-center mx-auto inline-block text-sm leading-none border border-swizel-colorB rounded-full text-unidark border-white hover:border-swizel-colorA hover:text-white hover:bg-swizel-colorA"
-            placeholder="search">
-          <i class="fa fa-search" style=""></i>
+
+          <!-- Hide this search input for large screen-->
+          <div class="p-1 pr-3 mt-4 mx-auto w-10/12 lg:hidden xs:flex justify-center items-center rounded-full border-unidark border">
+            <input
+              class="flex justify-between mx-auto text-sm leading-none border rounded-full text-unidark border-white hover:text-white"
+              placeholder="search">
+            <i class="fa fa-search" style=""></i>
+          </div>
         </div>
-        </div>
-        <div class="p-1 mt-4 lg:mt-0 w-56 mx-auto md:hidden lg:flex flex items-center rounded-full border-unidark border">
+
+        <!-- Show this search input for lg to xl screen-->
+        <div class="p-1 pr-3 mt-4 lg:mt-0 w-56 mx-auto xs:hidden lg:flex flex items-center rounded-full border-unidark border">
           <input
-            class="xs:flex xs:justify-center mx-auto inline-block text-sm leading-none border border-swizel-colorB rounded-full text-unidark border-white hover:border-swizel-colorA hover:text-white hover:bg-swizel-colorA"
+            class="xs:flex xs:justify-center mx-auto inline-block text-sm leading-none border rounded-full text-unidark border-white hover:text-white"
             placeholder="search">
           <i class="fa fa-search" style=""></i>
         </div>
       </div>
-      <div v-show="loggedIn" class="bg-unidarkblue rounded-full h-10 w-10 ml-10">
 
-    </div>
+      <!-- User pics large screen-->
+      <ProfileMenu 
+      class="ml-10 xs:hidden lg:block"
+      v-show="loggedIn"
+      whdiv="h-10 w-10"
+      />
     </nav>
   </header>
 </template>
 
 <script>
+import ProfileMenu from "@/components/ProfileMenu.vue"
 export default {
   name: "Header",
+  components: {
+    ProfileMenu
+  },
   props: {
     active: {
       type: String
@@ -107,9 +127,25 @@ export default {
       loggedIn: false,
     };
   },
+  created(){
+    const handleEscape = (e) => {
+      if (e.key === 'Esc' || e.key == "Escape") {
+        this.showMenu = false;
+      }
+    }
+
+    document.addEventListener('keydown', handleEscape);
+
+    this.$once('hook:beforeDestroy', () => {
+      document.removeEventListener('keydown', handleEscape);
+    })
+  },
   methods: {
     toggleMenu: function() {
       this.showMenu = !this.showMenu;
+    },
+    showProfileMenu(){
+
     }
   }
 };
@@ -117,10 +153,16 @@ export default {
 
 <style scoped>
 .active {
-  background: #0278F2;
+  background: #3182ce;
   color: white;
 }
 #nav {
   z-index: 9999;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 </style>
