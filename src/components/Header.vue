@@ -15,7 +15,7 @@
       </div>
       <div class="block lg:hidden">
         <button
-          class="flex items-center md:px-4 py-2 text-unidark hover:text-white hover:border-white"
+          class="flex items-center md:px-4 py-2 text-unidark hover:text-white hover:border-white focus:outline-none"
           @click="toggleMenu"
         >
           <img src="../assets/images/menu-icon.svg" />
@@ -74,14 +74,14 @@
           </a>
           <div class="p-1 mt-4 w-full lg:mt-0 xs:hidden sm:hidden lg:hidden md:flex justify-center items-center rounded-full border-unidark border md:mr-40">
           <input
-            class="xs:flex xs:justify-center mx-auto inline-block text-sm leading-none border border-swizel-colorB rounded-full text-unidark border-white hover:border-swizel-colorA hover:text-white hover:bg-swizel-colorA"
+            class="xs:flex xs:justify-center mx-auto inline-block text-sm leading-none border border-swizel-colorB rounded-full text-unidark border-white hover:border-swizel-colorA hover:bg-swizel-colorA focus:outline-none"
             placeholder="search">
           <i class="fa fa-search" style=""></i>
         </div>
         </div>
         <div class="p-1 mt-4 lg:mt-0 w-56 mx-auto md:hidden lg:flex flex items-center rounded-full border-unidark border">
           <input
-            class="xs:flex xs:justify-center mx-auto inline-block text-sm leading-none border border-swizel-colorB rounded-full text-unidark border-white hover:border-swizel-colorA hover:text-white hover:bg-swizel-colorA"
+            class="xs:flex xs:justify-center mx-auto inline-block text-sm leading-none border border-swizel-colorB rounded-full text-unidark border-white hover:border-swizel-colorA hover:bg-swizel-colorA focus:outline-none"
             placeholder="search">
           <i class="fa fa-search" style=""></i>
         </div>
