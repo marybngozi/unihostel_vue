@@ -19,7 +19,7 @@
 
         <!-- Title and buttons -->
         <div class="p-4">
-            <div class="flex justify-between">
+            <div class="px-3">
                 <h4 class="uppercase text-md text-unidarkblue font-bold">{{ hostel.name }}</h4>
                 <div class="space-x-1">
                     <span class="inline-block justify-end text-uniorange text-xs" v-for="(r, i) in 5" :key="i">
@@ -30,21 +30,21 @@
             </div>
 
             <!-- Description -->
-            <div class="text-gray-700">
+            <div class="text-gray-700 px-3">
                 <p class="text-sm font-light text-justify">
                     {{ hostel.description }}
                 </p>
             </div>
 
             <!-- Icons description -->
-            <div class="flex justify-center space-x-10 mt-3 px-3">
+            <div class=" mt-3 px-3">
                 <div class="space-x-1 text-gray-600 text-xs">
                     <i class="fa fa-money-bill text-gray-500"></i>
                     <span>{{hostel.priceRange}}</span>
                 </div>
                 <div class="space-x-1 text-gray-600 text-xs">
                     <i class="fa fa-bed text-gray-500"></i>
-                    <span>{{hostel.capacity}}</span>
+                    <span>{{hostel.capacity}} Beds</span>
                 </div>
                 <div class="space-x-1 text-gray-600 text-xs" >
                     <i class="fa fa-home text-gray-500" title="Price range"></i>

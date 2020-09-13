@@ -18,11 +18,11 @@ export default {
             hostels: [
                 {
                     "name": "Chike Okoli Hostel",
-                    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae nesciunt dicta provident aspernatur voluptates facere? Et, dolorum! Aspernatur laborum iure, laboriosam quam totam sit illo fuga temporibus! Perferendis, quibusdam perspiciatis!",
+                    "description": "Located near the main admin block",
                     "capacity": 320,
                     "rating": 4,
                     "category": "storey",
-                    "priceRange": "24000 - 30000", 
+                    "priceRange": "N24,000 - N30,000", 
                     "images": [
                         {
                             "url": "https://images.unsplash.com/photo-1584738766473-61c083514bf4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
@@ -36,11 +36,11 @@ export default {
                 },
                 {
                     "name": "Ngozi Okonjo Hostel",
-                    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae nesciunt dicta provident aspernatur voluptates facere? Et, dolorum! Aspernatur laborum iure, laboriosam quam totam sit illo fuga temporibus! Perferendis, quibusdam perspiciatis!",
+                    "description": "Located near the school main bus stop",
                     "capacity": 320,
                     "rating": 3,
                     "category": "storey",
-                    "priceRange": "24000 - 30000", 
+                    "priceRange": "N24,000 - N30,000", 
                     "images": [
                         {
                             "url": "https://images.unsplash.com/photo-1584091780978-1beeb2bec1b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
@@ -50,11 +50,11 @@ export default {
                 },
                 {
                     "name": "Chimamnda Hostel",
-                    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nesciunt, quia omnis veniam nihil reprehenderit pariatur nemo delectus odit cumque corrupti quisquam quasi eaque, iure sed enim accusamus provident vero?",
+                    "description": "Located between the school garden and auditorium",
                     "capacity": 320,
                     "rating": 5,
                     "category": "bungalow",
-                    "priceRange": "24000 - 30000", 
+                    "priceRange": "N24,000 - N30,000", 
                     "images": [
                         {
                             "url": "https://images.unsplash.com/photo-1460317442991-0ec209397118?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
