@@ -1,11 +1,11 @@
 <template>
     <section class="">
         <Header active="hostels" class="sticky top-0"/>
-        <section class="mt-5 flex xs:flex-col md:flex-row">
-            <aside class="md:w-2/12 md:flex-none md:order-none xs:w-11/12 xs:mx-auto xs:mb-10 sm:mb-0">
+        <section class="mt-5 flex xs:flex-col lg:flex-row">
+            <aside class="lg:w-2/12 lg:flex-none lg:order-none xs:w-11/12 xs:mx-auto xs:mb-10 sm:mb-0">
                 <AsideLeft />
             </aside>
-            <main class="md:w-7/12 md:flex-none md:order-none xs:w-11/12 xs:mx-auto xs:mb-8 sm:mb-0 xs:order-first">
+            <main class="lg:w-7/12 lg:flex-none lg:order-none xs:w-11/12 xs:mx-auto xs:mb-8 sm:mb-0 xs:order-first">
                 <RoomDetails 
                 v-if="display == 'room'"
                 :room="room"
@@ -25,7 +25,7 @@
                 class="mt-5"/>
 
             </main>
-            <aside class="md:w-2/12 md:flex-none md:order-none xs:w-11/12 xs:mx-auto xs:mb-10 sm:mb-0 xs:order-last">
+            <aside class="lg:w-2/12 lg:flex-none lg:order-none xs:w-11/12 xs:mx-auto xs:mb-10 sm:mb-0 xs:order-last">
                 <AsideRight />
             </aside>
         </section>
