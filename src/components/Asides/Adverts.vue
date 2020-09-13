@@ -12,10 +12,10 @@
             <h3 class="font-bold text-md text-gray-700">
                 Pre Science Program
             </h3>
-            <p class="text-justify text-xs text-gray-600 pb-0 mb-0">
+            <p class="text-justify text-xs text-gray-600 mb-0">
                 Register and learn to gain admission into the univeristy easily, Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nihil optio ex vero provident consequuntur sed nostrum. Dolorem officia dignissimos.
             </p>
-            <p class="text-right py-0">
+            <p class="text-right">
                 <button class="bg-blue-500 p-1 border rounded-full text-xs">
                     <span class="text-white pr-1">Click to Register</span>
                     <span class="animate-ping"><i class="fa fa-angle-double-right"></i></span>
@@ -27,10 +27,10 @@
             <h3 class="font-bold text-md text-gray-700">
                 CEP Program
             </h3>
-            <p class="text-justify text-xs text-gray-600 pb-0 mb-0">
+            <p class="text-justify text-xs text-gray-600 mb-0">
                 Continue your education in unzik CEP, Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nihil optio ex vero provident consequuntur sed nostrum. Dolorem officia dignissimos.
             </p>
-            <p class="text-right py-0">
+            <p class="text-right">
                 <button class="bg-blue-500 p-1 border rounded-full text-xs">
                     <span class="text-white pr-1">Click to Register</span>
                     <span class="animate-ping"><i class="fa fa-angle-double-right"></i></span>
