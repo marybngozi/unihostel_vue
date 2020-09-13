@@ -2,11 +2,11 @@
   <section class="">
     <Header active="login" class="sticky top-0"/>
     <section class="mt-5 flex xs:flex-col md:flex-row">
-      <aside class="md:w-2/12 md:flex-none md:order-none xs:w-11/12 xs:mx-auto xs:mb-10 sm:mb-0">
+      <!-- <aside class="md:w-2/12 md:flex-none md:order-none xs:w-11/12 xs:mx-auto xs:mb-10 sm:mb-0">
         <AsideLeft />
-      </aside>
+      </aside> -->
       <main class="md:w-7/12 md:flex-none md:order-none xs:w-11/12 xs:mx-auto xs:mb-8 sm:mb-0 xs:order-first">
-        <div class="bg-white shadow xs:w-11/12 md:w-12/12 md:flex mx-auto">
+        <div class="bg-white shadow-lg xs:w-11/12 md:w-12/12 md:flex mx-auto">
           <div class="h-20 md:h-auto md:w-1/3 lg:w-1/3" id="leftImg">
           </div>
           <div class="p-5 md:w-2/3 lg:w-2/3">
@@ -43,9 +43,9 @@
           </div>
         </div>
       </main>
-      <aside class="md:w-2/12 md:flex-none md:order-none xs:w-11/12 xs:mx-auto xs:mb-10 sm:mb-0 xs:order-last">
+      <!-- <aside class="md:w-2/12 md:flex-none md:order-none xs:w-11/12 xs:mx-auto xs:mb-10 sm:mb-0 xs:order-last">
         <AsideRight />
-      </aside>
+      </aside> -->
     </section>
     <Footer />
   </section>

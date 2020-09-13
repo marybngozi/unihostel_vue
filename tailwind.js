@@ -36,7 +36,9 @@ module.exports = {
         "poppins": "Poppins"
       }
     },
-    variants: {},
+    variants: {
+      outline: ['responsive', 'focus', 'hover', 'active']
+    },
     plugins: []
   };
   

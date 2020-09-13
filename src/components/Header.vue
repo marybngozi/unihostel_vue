@@ -21,7 +21,7 @@
         whdiv="h-8 w-8"
         />
         <button
-          class="flex items-center px-4 py-2 text-unidark hover:text-white hover:border-white"
+          class="flex items-center px-4 py-2 text-unidark hover:text-white hover:border-white focus:outline-none"
           @click="toggleMenu"
         >
           <img src="../assets/images/menu-icon.svg" class="lg:h-10 lg:w-10 xs:w-6 xs:h-6" />
@@ -93,7 +93,7 @@
         <!-- Show this search input for lg to xl screen-->
         <div class="p-1 pr-3 mt-4 lg:mt-0 w-56 mx-auto xs:hidden lg:flex flex items-center rounded-full border-unidark border">
           <input
-            class="xs:flex xs:justify-center mx-auto inline-block text-sm leading-none border rounded-full text-unidark border-white hover:text-white"
+            class="xs:flex xs:justify-center mx-auto inline-block text-sm leading-none border rounded-full text-unidark border-white hover:text-white focus:outline-none"
             placeholder="search">
           <i class="fa fa-search" style=""></i>
         </div>

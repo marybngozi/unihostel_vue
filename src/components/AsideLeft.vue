@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <h4 class="uppercase py-3">News Feeds</h4>
+    <div class="p-4 shadow-lg divide-y">
+        <h4 class="uppercase py-3 text-center text-xl text-unidarkblue">News Feeds</h4>
         <NewsFeeds />
     </div>
 </template>
