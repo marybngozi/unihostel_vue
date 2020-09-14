@@ -1,7 +1,7 @@
 <template>
     <section class="relative">
         <button @click="isOpen = !isOpen" 
-        class="relative z-10 rounded-full overflow-hidden border-2 border-gray-600 focus:outline-none focus:border-unidarkblue"
+        class="relative rounded-full overflow-hidden border-2 border-gray-600 focus:outline-none focus:border-unidarkblue"
         :class="whdiv"
         >
             <img class="h-full w-full object-cover" src="../assets/images/testipic.png"/>
