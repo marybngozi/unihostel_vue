@@ -8,10 +8,13 @@ import '@fortawesome/fontawesome-free/js/all.js'
 import axios from 'axios'
 import Vuelidate from  'vuelidate';
 import VueToastr from "vue-toastr";
+import moment from 'moment';
 
 import "@/assets/css/tailwind.css";
 
-Vue.prototype.$http = axios
+Vue.prototype.$http = axios;
+Vue.prototype.$moment = moment;
+
 Vue.use(Vuelidate)
 Vue.use(VueToastr, {});
 Vue.config.productionTip = false

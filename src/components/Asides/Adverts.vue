@@ -8,12 +8,33 @@
             </p>
         </div>
 
-        <div class="mt-8">
+        <div class="mt-8 border-b-2 pb-2">
             <h3 class="font-normal text-xl text-center p-2 text-gray-700">
-                Elmada Hostel
+                Pre Science Program
             </h3>
             <p class="text-justify text-sm text-gray-800">
-                Spacious Room fro elegant studies, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quod blanditiis ab veritatis exercitationem. Eum eius deserunt vero cupiditate, rerum, quia eos.
+                Register and learn to gain admission into the univeristy easily, Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nihil optio ex vero provident consequuntur sed nostrum. Dolorem officia dignissimos.
+            </p>
+            <p class="text-right">
+                <button class="bg-blue-500 px-2 py-1 border rounded-full text-xs">
+                    <span class="text-white pr-1">Click to Register</span>
+                    <span class="animate-ping"><i class="fa fa-angle-double-right"></i></span>
+                </button>
+            </p>
+        </div>
+
+        <div class="mt-8 border-b-2 pb-2">
+            <h3 class="font-normal text-xl text-center p-2 text-gray-700">
+                CEP Program
+            </h3>
+            <p class="text-justify text-sm text-gray-800">
+                Continue your education in unzik CEP, Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nihil optio ex vero provident consequuntur sed nostrum. Dolorem officia dignissimos.
+            </p>
+            <p class="text-right">
+                <button class="bg-blue-500 px-2 py-1 border rounded-full text-xs">
+                    <span class="text-white pr-1">Click to Register</span>
+                    <span class="animate-ping"><i class="fa fa-angle-double-right"></i></span>
+                </button>
             </p>
         </div>
     </div>

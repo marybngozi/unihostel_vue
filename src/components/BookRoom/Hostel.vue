@@ -10,7 +10,11 @@
             :loop="true">
             <slide class="h-full" v-for="(image, index) in hostel.images" :key="index" :tagName="image.title">
                 <div class="" style="height:20rem">
-                    <img :src="image.url" :alt="image.title" class="w-full h-full object-cover object-center">
+                    <img 
+                    :src="image.url" 
+                    :alt="image.title" 
+                    class="w-full h-full object-cover object-center bg-gray-300"
+                    >
                 </div>
                 
                 <h5 class="text-right text-black font-thin text-xs uppercase py-1 pr-2">{{ image.title }}</h5>
