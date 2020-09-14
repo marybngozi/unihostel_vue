@@ -14,7 +14,7 @@
                 <small>Chike Okoli Hostel</small>
             </h3>
             <p class="text-justify text-sm text-gray-800">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, inventore error aliquam magni quis amet a voluptate ducimus cumque maiores eius aperiam minus obcaecati velit magnam fugiat harum molestiae! Est! 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, inventore error aliquam magni quis amet a voluptate ducimus cumque maiores eius aperiam minus obcaecati velit magnam fugiat harum molestiae! Est! 
             </p>
         </div>
     </div>

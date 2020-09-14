@@ -6,7 +6,7 @@
             </p>
         </div>
 
-        <section class="flex justify-center flex-wrap p-4 lg:space-x-10 font-light">
+        <section class="md:flex md:flex-wrap md:justify-evenly p-4 font-light">
             <div class="block p-4">
                 <h1 class="text-white flex justify-start">
                     BOOK A ROOM TODAY
@@ -31,12 +31,12 @@
                 
             </div>
 
-            <div class="block p-4">
-                <h1 class="text-white justify-start ">
+            <div class="block p-4 text-center">
+                <h1 class="text-white justify-start">
                     COMPANY
                 </h1>
                 <nav class="mt-8">
-                    <ul class="text-gray-500 text-left">
+                    <ul class="text-gray-500 md:text-left text-center">
                         <li class="p-1">
                             <a href="/about">About Us</a>
                         </li>
@@ -97,7 +97,7 @@
         </section>
         
         <div class="flex justify-center items-center border-t border-gray-700">
-            <p class="text-gray-500 p-4 font-thin">
+            <p class="text-gray-500 p-4 font-thin text-center">
                 © {{new Date().getFullYear()}}, Nnamdi Azikiwe University. Awka, All rights reserved.
             </p>
         </div>
