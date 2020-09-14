@@ -13,10 +13,10 @@
         <transition name="fade">
         <div v-if="isOpen" class="absolute right-0 transition duration-500 ease-in-out mt-2 py-2 w-48 bg-white rounded shadow-xl text-sm">
             <ul>
-                <li class="block px-4 py-2 text-gray-800 hover:bg-blue-700 hover:text-white"><a href="#">Profile</a></li>
-                <li class="block px-4 py-2 text-gray-800 hover:bg-blue-700 hover:text-white"><a href="#">Change Password</a></li>
-                <li class="block px-4 py-2 text-gray-800 hover:bg-blue-700 hover:text-white"><a href="#">Notifications</a></li>
-                <li class="block px-4 py-2 text-gray-800 hover:bg-blue-700 hover:text-white"><a href="#">Log Out</a></li>
+                <li class="block px-4 py-2 text-gray-800 hover:bg-blue-700 hover:text-white"><a href="#" class="flex justify-start"><img class="mr-2" src="../assets/images/profile.svg"/> Profile</a></li>
+                <li class="block px-4 py-2 text-gray-800 hover:bg-blue-700 hover:text-white"><a href="#" class="flex justify-start"><img class="mr-2" src="../assets/images/change-password.svg"/>Change Password</a></li>
+                <li class="block px-4 py-2 text-gray-800 hover:bg-blue-700 hover:text-white border-b"><a href="#" class="flex justify-start"><img class="mr-2" src="../assets/images/notifications.svg"/>Notifications</a></li>
+                <li class="block px-4 py-2 text-gray-800 hover:bg-blue-700 hover:text-white"><a href="#" class="flex justify-start"><img class="mr-2" src="../assets/images/logout.svg"/>Log Out</a></li>
             </ul>
         </div>
         </transition>

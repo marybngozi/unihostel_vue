@@ -11,19 +11,19 @@
         
         <!-- Bed plan and description -->
         <div class="xl:w-4/6 md:w-3/6 xs:w-11/12 xs:mx-auto xs:mb-8">
-            <h4 class="text-gray-900 text-sm uppercase">
+            <h4 class="text-gray-00 text-sm uppercase">
                 Name: 
                 <span class="font-bold">
                     {{bed.name}}
                 </span>
             </h4>
-            <p class="text-sm text-gray-700 text-xs mt-3">
+            <p class="text-sm text-gray-700 mt-3">
                 <span class="uppercase">Bed Type: </span>
                 <span class="font-bold uppercase">
                     {{bed.type}} BED
                 </span>
             </p>
-            <p class="text-sm text-gray-700 text-xs mt-3">
+            <p class="text-sm text-gray-700 mt-3">
                 <span class="uppercase">Amount to pay: </span>
                 <span class="font-bold">
                     &#8358;{{formatMoney(bed.price)}}

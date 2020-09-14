@@ -27,6 +27,14 @@ Vue.use(VueRouter)
     component: () => import(/* webpackChunkName: "hostels" */ '../views/BookRoom.vue')
   },
   {
+    path: '/floor',
+    name: 'Floor',
+    // route level code-splitting
+    // this generates a separate chunk (room.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "room" */ '../views/Floor.vue')
+  },
+  {
     path: '/room',
     name: 'Room',
     // route level code-splitting

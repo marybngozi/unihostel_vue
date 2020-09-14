@@ -59,7 +59,7 @@
             <!-- View more button -->
             <div class="flex justify-end xs:mt-3 md:mt-2">
                 <button class="bg-transparent outline-none hover:outline-none focus:outline-none text-unidarkblue">
-                    <router-link to="/room">
+                    <router-link to="/floor">
                         <span class="px-3 font-semibold">View</span>
                         <i class="fa fa-long-arrow-alt-right font-thin w-48"></i>
                     </router-link>

@@ -1,6 +1,6 @@
 <template>
     <div class="pb-3 overflow-hidden">
-        <h2 class="text-center uppercase font-bold my-5">Room Details</h2>
+        <h2 class="text-center uppercase font-light text-2xl text-unidarkblue my-5">Room Details</h2>
 
         <!-- Room plan and description -->
         <div class="flex xs:flex-col md:flex-row">
@@ -17,7 +17,7 @@
                         {{room.roomName}}
                     </span>
                 </h4>
-                <p class="text-sm text-gray-700 text-xs mt-3">
+                <p class="text-sm text-gray-700 mt-3">
                     <span class="uppercase">Bed Space: </span>
                     <span class="font-bold">
                         {{room.noOfBeds}}
@@ -34,9 +34,9 @@
 
         <!-- Room table -->
         <div class="">
-            <table class="table table-auto mx-auto w-11/12 mb-10 overflow-x-scroll">
-                <thead class="">
-                    <tr class="text-xs text-left">
+            <table class="table table-auto mx-auto w-11/12 mb-10 overflow-x-scroll border">
+                <thead class="bg-gray-200 text-gray-700">
+                    <tr class="text-xs text-center divide-x">
                         <!-- <th class="px-1 py-2">S/N</th> -->
                         <th class="px-2 py-2">BED</th>
                         <th class="px-2 py-2">Status</th>
@@ -45,8 +45,8 @@
                         <th class="px-1 py-2">Action</th>
                     </tr>
                 </thead>
-                <tbody class="">
-                    <tr class="text-xs hover:bg-gray-100 border-b border-gray-200 py-10" v-for="(bed, i) in room.beds" :key="i">
+                <tbody class="text-center">
+                    <tr class="text-xs text-gray-600 hover:bg-gray-100 border-b border-gray-200 py-10 divide-x" v-for="(bed, i) in room.beds" :key="i">
                         <!-- <td class="px-1 py-2 ">{{ i+1 }}</td> -->
                         <td class="px-2 py-2 uppercase">{{bed.name}}</td>
                         <td class="px-2 py-2 ">
@@ -55,13 +55,13 @@
                         </td>
                         <td class="px-2 py-2 ">&#8358;{{formatMoney(bed.price)}}</td>
                         <td class="px-2 py-2 ">{{ $moment(bed.expiryDate).fromNow() }}</td>
-                        <td class="px-1 py-2">
+                        <td class="px-1 py-2 flex justify-center">
                             <button v-if="bed.status == 1"
                             @click="$emit('show-bed', bed.id)"
-                            class="bg-blue-600 text-white rounded text-xs py-1 px-2 w-auto flex items-center justify-center mr-3">
+                            class="bg-blue-600 text-white rounded-full text-xs py-1 px-2 w-auto flex items-center justify-center mr-3">
                                 <router-link to="#">Book Bed</router-link>
                             </button>
-                            <button @click="$emit('back-order', bed.id)" v-if="showBackOrder" class="bg-green-600 text-white rounded text-xs py-1 px-2 w-auto flex items-center justify-center">
+                            <button @click="$emit('back-order', bed.id)" v-if="showBackOrder" class="bg-green-600 text-white rounded-full text-xs py-1 px-2 w-auto flex items-center justify-center">
                                 <router-link to="#">Back Order</router-link>
                             </button>
                         </td>
