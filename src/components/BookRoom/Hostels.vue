@@ -22,7 +22,10 @@ export default {
                     "capacity": 320,
                     "rating": 4,
                     "category": "storey",
-                    "priceRange": "N24,000 - N30,000", 
+                    "priceRange": {
+                        "from":"24000",
+                        "to": "30000"
+                    },
                     "images": [
                         {
                             "url": "https://images.unsplash.com/photo-1584738766473-61c083514bf4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
@@ -40,7 +43,10 @@ export default {
                     "capacity": 320,
                     "rating": 3,
                     "category": "storey",
-                    "priceRange": "N24,000 - N30,000", 
+                    "priceRange": {
+                        "from":"24000",
+                        "to": "30000"
+                    }, 
                     "images": [
                         {
                             "url": "https://images.unsplash.com/photo-1584091780978-1beeb2bec1b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
@@ -54,7 +60,10 @@ export default {
                     "capacity": 320,
                     "rating": 5,
                     "category": "bungalow",
-                    "priceRange": "N24,000 - N30,000", 
+                    "priceRange": {
+                        "from":"24000",
+                        "to": "30000"
+                    }, 
                     "images": [
                         {
                             "url": "https://images.unsplash.com/photo-1460317442991-0ec209397118?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",

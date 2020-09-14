@@ -44,7 +44,8 @@
             <div class=" mt-3 px-3">
                 <div class="space-x-1 text-gray-600 text-xs">
                     <i class="fa fa-money-bill text-gray-500"></i>
-                    <span>{{hostel.priceRange}}</span>
+                    <span>&#8358;{{formatMoney(hostel.priceRange.from)}}</span> - 
+                    <span>&#8358;{{formatMoney(hostel.priceRange.to)}}</span>
                 </div>
                 <div class="space-x-1 text-gray-600 text-xs">
                     <i class="fa fa-bed text-gray-500"></i>
@@ -81,6 +82,11 @@ export default {
             type: Object
         }
     },
+    methods: {
+        formatMoney(money) {
+            return Number(money).toLocaleString('en-US')
+        }
+    }
 
 }
 </script>
