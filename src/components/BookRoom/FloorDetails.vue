@@ -1,25 +1,7 @@
 <template>
     <section>
         <div class="shadow-lg p-4">
-            <!-- <carousel 
-            class="" :per-page="1" 
-            :autoplay="true" 
-            :speed="1000"
-            :autoplayTimeout="3000"
-            paginationPosition="bottom-overlay" 
-            :loop="true">
-            <slide class="h-full" v-for="(image, index) in this.$route.hostel.hostelImg" :key="index" :tagName="image.title">
-                <div class="" style="height:20rem">
-                    <img 
-                    :src="image.url" 
-                    :alt="image.title" 
-                    class="w-full h-full object-cover object-center bg-gray-300"
-                    >
-                </div>
-                
-                <h5 class="text-right text-black font-thin text-xs uppercase py-1 pr-2">{{ image.title }}</h5>
-            </slide>
-        </carousel> -->
+            <img class="w-full py-4" :src="hostelImg" alt="">
             <h2 class="flex justify-start font-light text-unidarkblue text-2xl">{{hostelName}}</h2>
             <p class="flex justify-start font-light text-sm text-gray-800">{{hostelDescription}}</p>
 
@@ -62,19 +44,14 @@ export default {
             type: String,
             required: true
         },
-        // hostelImg: {
-        //     type: Object,
-        //     required: true
-        // },
+        hostelImg: {
+            type: Array,
+            required: true
+        },
         category: {
             type: String,
             required: true
         }
-    },
-    // data() {
-    //     return{
-    //         hostelImg: this.$route.hostelImg
-    //     }
-    // }
+    }
 }
 </script>

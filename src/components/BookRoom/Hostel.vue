@@ -65,7 +65,7 @@
                         params: {
                         hostelname: hostel.name,
                         hostelDescription: hostel.description,
-                        hostelImg: hostel.images,
+                        hostelImg: hostel.images[0],
                         category: hostel.category
                         }
                     }" >

@@ -7,9 +7,10 @@
         </aside>
         <main class="lg:w-7/12 lg:flex-none lg:order-none xs:w-11/12 xs:mx-auto xs:mb-8 sm:mb-0 xs:order-first">
             <FloorDetails 
-            hostelName="hostelName"
-            hostelDescription="hostelDescription"
-            category="category"
+            v-bind:hostelName="hostelName"
+            v-bind:hostelDescription="hostelDescription"
+            v-bind:category="category"
+            v-bind:hostelImg="hostelImg"
         />
         </main>
         <aside class="lg:w-2/12 lg:flex-none lg:order-none xs:w-11/12 xs:mx-auto xs:mb-10 sm:mb-0 xs:order-last">
@@ -35,6 +36,21 @@ export default {
         AsideLeft,
         AsideRight,
         Footer
+    },
+    data() {
+        return {
+            hostelname: null,
+            hostelDescription: null,
+            category: null,
+            hostelImg:  null
+        };
+    },
+    beforeMount: function() {
+        this.hostelName = this.$route.params.hostelname;
+        this.hostelDescription = this.$route.params.hostelDescription;
+        this.category = this.$route.params.category;
+        this.hostelImg = this.$route.params.hostelImg.url;
+        console.log(this.$route.params.hostelImg.url);
     }
 }
 </script>
