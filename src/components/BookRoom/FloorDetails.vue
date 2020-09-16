@@ -32,8 +32,10 @@
                 </select>
             </div>
 
-            <img class="mt-5" src="https://res.cloudinary.com/dnbbhvcbt/image/upload/v1599891484/floor_plan_-_A_l0fixu.png" alt="">
+            <div class="mt-5 flex justify-center">
+                <img src="https://res.cloudinary.com/dnbbhvcbt/image/upload/v1599891484/floor_plan_-_A_l0fixu.png" alt="">
 
+            </div>
             <div class="w-40 rounded-full text-white px-3 py-2 mt-10 mx-auto bg-orange-600">
                 <router-link class="flex justify-center items-center" to="/room">
                 Proceed
