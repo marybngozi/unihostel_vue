@@ -45,7 +45,7 @@ export default {
             required: true
         },
         hostelImg: {
-            type: Array,
+            type: String,
             required: true
         },
         category: {
