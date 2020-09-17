@@ -7,11 +7,8 @@
         </aside>
         <main class="lg:w-7/12 lg:flex-none lg:order-none xs:w-11/12 xs:mx-auto xs:mb-8 sm:mb-0 xs:order-first">
             <FloorDetails 
-            v-bind:hostelName="hostelName"
-            v-bind:hostelDescription="hostelDescription"
-            v-bind:category="category"
-            v-bind:hostelImg="hostelImg"
-            v-bind:floor="floor"
+            :hostel="hostel"
+            :floors="floors"
         />
         </main>
         <aside class="lg:w-2/12 lg:flex-none lg:order-none xs:w-11/12 xs:mx-auto xs:mb-10 sm:mb-0 xs:order-last">
@@ -40,62 +37,190 @@ export default {
     },
     data() {
         return {
-            hostelname: null,
-            hostelDescription: null,
-            category: null,
-            hostelImg:  null,
-            floor: {
-                floor: "First Floor",
-                // roomPlan: "https://res.cloudinary.com/dnbbhvcbt/image/upload/v1599437871/Room_structure-big_yplsjp.png",
-                roomPlan: "https://res.cloudinary.com/dnbbhvcbt/image/upload/v1599544670/Room_structure_csp8lb.png",
-                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptatum reiciendis, dolor velit aliquid nam odio ipsa quia commodi labore tenetur nulla nisi obcaecati! Expedita error ipsam sint sapiente dignissimos!",
-                noOfrooms: "4",
-                rooms: [
+            hostelId: null, 
+            hostel:{
+                name: "Chike Okoli Hostel",
+                description: "Quis voluptatum reiciendis, dolor velit aliquid nam odio ipsa quia commodi ",
+                category: null,
+                images: [
                     {
-                        capacity: "4 Beds",
-                        name: "RoomA1",
-                        type: "Single Buks",
-                        status: 1,
-                        expiryDate: 0,
-                        price: "30000",
-
+                        "url": "https://images.unsplash.com/photo-1584738766473-61c083514bf4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+                        "title": "Front view"
                     },
                     {
-                        capacity: "8 beds",
-                        name: "RoomA2",
-                        type: "bunk",
-                        status: 0,
-                        expiryDate: 1637362800000,
-                        price: "25000",
+                        "url": "https://images.unsplash.com/photo-1448630360428-65456885c650?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+                        "title": "Side view"
+                    }
+                ],
+            },
+            floors: [
+                {
+                    name: "Ground Floor",
+                    plan: "https://res.cloudinary.com/dnbbhvcbt/image/upload/v1599891484/floor_plan_-_A_l0fixu.png",
+                    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptatum reiciendis, dolor velit aliquid nam odio ipsa quia commodi labore tenetur nulla nisi obcaecati! Expedita error ipsam sint sapiente dignissimos!",
+                    noOfrooms: "4",
+                    rooms: [
+                        {
+                            capacity: "4 Beds",
+                            name: "A100",
+                            type: "Single Buks",
+                            status: 1,
+                            price: "30000",
 
-                    },
-                    {
-                        capacity: "10 beds",
-                        name: "RoomA3",
-                        type: "Double Bunks",
-                        status: 0,
-                        expiryDate: 1601247600000,
-                        price: "20000",
+                        },
+                        {
+                            capacity: "8 beds",
+                            name: "A101",
+                            type: "bunk",
+                            status: 0,
+                            price: "25000",
 
-                    },
-                    {
-                        capacity: "4 beds",
-                        name: "RoomA4",
-                        type: "Single Beds",
-                        status: 1,
-                        expiryDate: 0,
-                        price: "30000",
+                        },
+                        {
+                            capacity: "10 beds",
+                            name: "A102",
+                            type: "Double Bunks",
+                            status: 0,
+                            price: "20000",
 
-                    },
-                ]
-            }
+                        },
+                        {
+                            capacity: "4 beds",
+                            name: "A103",
+                            type: "Single Beds",
+                            status: 1,
+                            price: "30000",
+
+                        },
+                    ]
+                },
+                {
+                    name: "First Floor",
+                    plan: "https://res.cloudinary.com/dnbbhvcbt/image/upload/v1599891485/floor_plan_-_B_gcbwba.png",
+                    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptatum reiciendis, dolor velit aliquid nam odio ipsa quia commodi labore tenetur nulla nisi obcaecati! Expedita error ipsam sint sapiente dignissimos!",
+                    noOfrooms: "4",
+                    rooms: [
+                        {
+                            capacity: "4 Beds",
+                            name: "B100",
+                            type: "Single Buks",
+                            status: 1,
+                            price: "30000",
+
+                        },
+                        {
+                            capacity: "8 beds",
+                            name: "B101",
+                            type: "bunk",
+                            status: 0,
+                            price: "25000",
+
+                        },
+                        {
+                            capacity: "10 beds",
+                            name: "B102",
+                            type: "Double Bunks",
+                            status: 0,
+                            price: "20000",
+
+                        },
+                        {
+                            capacity: "4 beds",
+                            name: "B103",
+                            type: "Single Beds",
+                            status: 1,
+                            price: "30000",
+
+                        },
+                    ]
+                },
+                {
+                    name: "Second Floor",
+                    plan: "https://res.cloudinary.com/dnbbhvcbt/image/upload/v1599891484/floor_plan_-_A_l0fixu.png",
+                    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptatum reiciendis, dolor velit aliquid nam odio ipsa quia commodi labore tenetur nulla nisi obcaecati! Expedita error ipsam sint sapiente dignissimos!",
+                    noOfrooms: "4",
+                    rooms: [
+                        {
+                            capacity: "4 Beds",
+                            name: "A100",
+                            type: "Single Buks",
+                            status: 1,
+                            price: "30000",
+
+                        },
+                        {
+                            capacity: "8 beds",
+                            name: "A101",
+                            type: "bunk",
+                            status: 0,
+                            price: "25000",
+
+                        },
+                        {
+                            capacity: "10 beds",
+                            name: "A102",
+                            type: "Double Bunks",
+                            status: 0,
+                            price: "20000",
+
+                        },
+                        {
+                            capacity: "4 beds",
+                            name: "A103",
+                            type: "Single Beds",
+                            status: 1,
+                            price: "30000",
+
+                        },
+                    ]
+                },
+                {
+                    name: "Third Floor",
+                    plan: "https://res.cloudinary.com/dnbbhvcbt/image/upload/v1599891485/floor_plan_-_B_gcbwba.png",
+                    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptatum reiciendis, dolor velit aliquid nam odio ipsa quia commodi labore tenetur nulla nisi obcaecati! Expedita error ipsam sint sapiente dignissimos!",
+                    noOfrooms: "4",
+                    rooms: [
+                        {
+                            capacity: "4 Beds",
+                            name: "B100",
+                            type: "Single Buks",
+                            status: 1,
+                            price: "30000",
+
+                        },
+                        {
+                            capacity: "8 beds",
+                            name: "B101",
+                            type: "bunk",
+                            status: 0,
+                            price: "25000",
+
+                        },
+                        {
+                            capacity: "10 beds",
+                            name: "B102",
+                            type: "Double Bunks",
+                            status: 0,
+                            price: "20000",
+
+                        },
+                        {
+                            capacity: "4 beds",
+                            name: "B103",
+                            type: "Single Beds",
+                            status: 1,
+                            price: "30000",
+
+                        },
+                    ]
+                },
+            ]
         };
     },
     beforeMount: function() {
-        this.hostelName = this.$route.params.hostelname;
-        this.hostelDescription = this.$route.params.hostelDescription;
-        this.category = this.$route.params.category;
-        this.hostelImg = this.$route.params.hostelImg.url;
+        this.hostelId = this.$route.params.hostelid;
+        // use hostelId to get the hostel details and floors
+        console.log(this.hostelId);
     }
 }
 </script>

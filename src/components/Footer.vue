@@ -31,12 +31,12 @@
                 
             </div>
 
-            <div class="block p-4 text-center">
+            <div class="block p-4">
                 <h1 class="text-white justify-start">
                     COMPANY
                 </h1>
                 <nav class="mt-8">
-                    <ul class="text-gray-500 md:text-left text-center">
+                    <ul class="text-gray-500 md:text-left">
                         <li class="p-1">
                             <a href="/about">About Us</a>
                         </li>

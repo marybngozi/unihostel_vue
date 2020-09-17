@@ -56,6 +56,7 @@ export default {
     data() {
         return {
             display: 'room',
+            roomId: null,
             selectedBed: null,
             room: {
                 roomName: "A100",
@@ -86,7 +87,7 @@ export default {
                         id: "678",
                         name: "bed3",
                         type: "single",
-                        status: 0,
+                        status: -1,
                         expiryDate: 1601247600000,
                         price: "30000",
 
@@ -103,6 +104,11 @@ export default {
                 ]
             }
         }
+    },
+    beforeMount: function() {
+        this.roomId = this.$route.params.roomid;
+        // use roomId to get the room details and beds
+        console.log(this.roomId);
     },
     methods: {
         showBed(bedId) {

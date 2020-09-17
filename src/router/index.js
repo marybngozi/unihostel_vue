@@ -27,7 +27,7 @@ Vue.use(VueRouter)
     component: () => import(/* webpackChunkName: "hostels" */ '../views/BookRoom.vue')
   },
   {
-    path: '/floor',
+    path: '/floor/:hostelid',
     name: 'Floor',
     // route level code-splitting
     // this generates a separate chunk (room.[hash].js) for this route
@@ -36,12 +36,13 @@ Vue.use(VueRouter)
     props: true
   },
   {
-    path: '/room',
+    path: '/room/:roomid',
     name: 'Room',
     // route level code-splitting
     // this generates a separate chunk (room.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "room" */ '../views/Room.vue')
+    component: () => import(/* webpackChunkName: "room" */ '../views/Room.vue'),
+    props: true
   },
   {
     path: '/login',

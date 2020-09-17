@@ -3,8 +3,8 @@
         <h2 class="flex justify-between uppercase font-bold my-5">
             <button 
             @click="$emit('show-room')"
-            class="outline-none hover:outline-none focus:outline-none">
-                <i class="fa fa-2x fa-long-arrow-alt-left"></i>
+            class="outline-none hover:outline-none focus:outline-none space-x-2">
+                <i class="fa fa-2x fa-long-arrow-alt-left"></i><span class="align-top">Back</span>
             </button>
             <span>Bed Details</span>
         </h2>

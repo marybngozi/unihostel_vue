@@ -14,7 +14,7 @@
         
       </div>
       <div class="block lg:hidden flex justify-between sm:space-x-3 xs:space-x-0">
-        <!-- User pics medium screen -->
+        <!-- User pics medium to small screen -->
         <ProfileMenu
         class="mt-2"
         v-show="loggedIn"
@@ -38,35 +38,35 @@
         >
           <a
             href="/"
-            class="p-3 xs:flex xs:justify-center block mt-4 lg:inline-block lg:mt-0 text-unidark hover:border-b-2 md:mr-4"
+            class="lg:p-3 xs:py-2 md:py-2 xs:flex xs:justify-center block xs:mt-2 lg:mt-4 lg:inline-block lg:mt-0 text-unidark hover:border-b-2 md:mr-4"
             :class="active === 'home' ? 'active' : 'notActive'"
           >
             Home
           </a>
           <a
             href="/process"
-            class="p-3 xs:flex xs:justify-center block mt-4 lg:inline-block lg:mt-0 text-unidark hover:border-b-2 md:mr-4"
+            class="lg:p-3 xs:py-2 xs:flex xs:justify-center block xs:mt-2 lg:mt-4 lg:inline-block lg:mt-0 text-unidark hover:border-b-2 md:mr-4"
             :class="active === 'process' ? 'active' : 'notActive'"
           >
             How it Works
           </a>
           <a
             href="/hostels"
-            class="p-3 xs:flex xs:justify-center block mt-4 lg:inline-block lg:mt-0 text-unidark hover:border-b-2 md:mr-4"
+            class="lg:p-3 xs:py-2 xs:flex xs:justify-center block xs:mt-2 lg:mt-4 lg:inline-block lg:mt-0 text-unidark hover:border-b-2 md:mr-4"
             :class="active === 'hostels' ? 'active' : 'notActive'"
           >
             Book Room
           </a>
           <a
             href="/contact"
-            class="p-3 xs:flex xs:justify-center block mt-4 lg:inline-block lg:mt-0 text-unidark hover:border-b-2 md:mr-4"
+            class="lg:p-3 xs:py-2 xs:flex xs:justify-center block xs:mt-2 lg:mt-4 lg:inline-block lg:mt-0 text-unidark hover:border-b-2 md:mr-4"
             :class="active === 'contact' ? 'active' : 'notActive'"
           >
             Contact
           </a>
           <a
             href="/faq"
-            class="p-3 xs:flex xs:justify-center block mt-4 lg:inline-block lg:mt-0 text-unidark hover:border-b-2 md:mr-4"
+            class="lg:p-3 xs:py-2 xs:flex xs:justify-center block xs:mt-2 lg:mt-4 lg:inline-block lg:mt-0 text-unidark hover:border-b-2 md:mr-4"
             :class="active === 'faq' ? 'active' : 'notActive'"
           >
             FAQ
@@ -74,17 +74,17 @@
           <a
             href="/login"
             v-show="!loggedIn"
-            class="p-3 xs:flex xs:justify-center block mt-4 lg:inline-block lg:mt-0 text-unidark hover:border-b-2 md:mr-4"
+            class="lg:p-3 xs:py-2 xs:flex xs:justify-center block xs:mt-2 lg:mt-4 lg:inline-block lg:mt-0 text-unidark hover:border-b-2 md:mr-4"
             :class="(active === 'login' || active === 'signup') ? 'active' : 'notActive'"
           >
             <span v-if="active != 'signup'">Login</span>
             <span v-if="active == 'signup'">Sign Up</span>
           </a>
 
-          <!-- Hide this search input for large screen-->
+          <!-- Hide this search input for large screen and show it for medium and small screen-->
           <div class="p-1 pr-3 mt-4 mx-auto w-10/12 lg:hidden xs:flex justify-center items-center rounded-full border-unidark border">
             <input
-              class="flex justify-between mx-auto text-sm leading-none border rounded-full text-unidark border-white hover:text-white"
+              class="text-sm leading-none border rounded-full text-unidark border-white hover:text-white"
               placeholder="search">
             <i class="fa fa-search" style=""></i>
           </div>
@@ -93,7 +93,7 @@
         <!-- Show this search input for lg to xl screen-->
         <div class="p-1 pr-3 mt-4 lg:mt-0 w-56 mx-auto xs:hidden lg:flex flex items-center rounded-full border-unidark border">
           <input
-            class="xs:flex xs:justify-center mx-auto inline-block text-sm leading-none border rounded-full text-unidark border-white hover:text-white focus:outline-none"
+            class="mx-auto inline-block text-sm leading-none border rounded-full text-unidark border-white hover:text-white focus:outline-none"
             placeholder="search">
           <i class="fa fa-search" style=""></i>
         </div>

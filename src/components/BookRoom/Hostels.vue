@@ -18,6 +18,7 @@ export default {
             hostels: [
                 {
                     "name": "Chike Okoli Hostel",
+                    id: 1,
                     "description": "All male hostel. Located near the main admin block",
                     "capacity": 320,
                     "rating": 4,
@@ -39,6 +40,7 @@ export default {
                 },
                 {
                     "name": "Ngozi Okonjo Hostel",
+                    id: 2,
                     "description": "All female hostel. Located near the school main bus stop",
                     "capacity": 320,
                     "rating": 3,
@@ -56,6 +58,7 @@ export default {
                 },
                 {
                     "name": "Chimamnda Hostel",
+                    id: 3,
                     "description": "Mixed hostel. Located between the school garden and auditorium",
                     "capacity": 320,
                     "rating": 5,

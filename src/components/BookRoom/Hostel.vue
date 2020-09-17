@@ -62,12 +62,7 @@
                 <button class="bg-transparent outline-none hover:outline-none focus:outline-none text-unidarkblue">
                     <router-link :to="{
                         name: 'Floor',
-                        params: {
-                        hostelname: hostel.name,
-                        hostelDescription: hostel.description,
-                        hostelImg: hostel.images[0],
-                        category: hostel.category
-                        }
+                        params: {hostelid: hostel.id}
                     }" >
                         <span class="px-3 font-semibold">View</span>
                         <i class="fa fa-long-arrow-alt-right font-thin w-48"></i>
