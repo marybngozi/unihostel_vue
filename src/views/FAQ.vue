@@ -1,7 +1,7 @@
 <template>
   <section class="">
     <Header active="faq" class="sticky top-0"/>
-    <section class="mt-5 flex xs:flex-col md:flex-row">
+    <section class="mt-5 flex xs:flex-col lg:flex-row">
       <aside class="lg:w-2/12 lg:flex-none lg:order-none xs:w-11/12 xs:mx-auto xs:mb-10 sm:mb-0">
         <AsideLeft />
       </aside>

@@ -1,7 +1,7 @@
 <template>
   <section class="">
     <Header active="signup" class="sticky top-0"/>
-    <section class="mt-5 flex xs:flex-col md:flex-row">
+    <section class="mt-4 flex xs:flex-col md:flex-row">
       <!-- <aside class="md:w-2/12 md:flex-none md:order-none xs:w-11/12 xs:mx-auto xs:mb-10 sm:mb-0">
         <AsideLeft />
       </aside> -->
@@ -13,12 +13,12 @@
             <div class="">
               <p class="text-right p-8 md:p-5 text-gray-800 font-regular">REGISTER</p>
             </div>
-            <div class="mt-3">
+            <div class="mt-2">
               <p class="text-gray-600">
                 Register or Login to book a room for either yourself or your ward for the next academic session
               </p>
             </div>
-            <form class="mt-5" action="#" @submit.prevent>
+            <form class="mt-3" action="#" @submit.prevent>
               <div class="field">
                 <input class="text-gray-600 pl-5" type="text" name="regNumber" id="regNumber" placeholder="2020364386">
                 <label for="regNumber" class="text-gray-600 p-2 text-xs font-thin">Reg Number</label>

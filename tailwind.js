@@ -2,6 +2,9 @@
 module.exports = {
     purge: ["./src/**/*.html", "./src/**/*.vue", "./src/**/*.jsx"],
     theme: {
+      zIndex: {
+        '9999': 9999,
+      },
       extend: {
         colors: {
           "footer-bg": "#0C2034",
@@ -18,8 +21,8 @@ module.exports = {
       screens: {
         xs: "320px",
   
-        sm: "640px",
-        // => @media (min-width: 640px) { ... }
+        sm: "425px",
+        // => @media (min-width: 425px) { ... }
   
         md: "768px",
         // => @media (min-width: 768px) { ... }
@@ -32,7 +35,7 @@ module.exports = {
       },
       fontFamily: {
         // eslint-disable-next-line prettier/prettier
-        "unihostelFont": '"Noto Sans"',
+        "unihostelFont": "Noto Sans",
         "poppins": "Poppins"
       }
     },

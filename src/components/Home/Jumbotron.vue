@@ -13,7 +13,7 @@
                     <h2 class="px-4 text-xl font-thin text-white xs:mx-auto flex flex-wrap">Undergo your studies in a peaceful accommodation</h2>
                     <div class="px-4 space-x-4 flex p-4">
                         <button class="bg-blue-600 text-white rounded-lg text-xs p-4 w-36 h-10 flex items-center justify-center">
-                            <router-link to="/hostels">BOOK A ROOM</router-link>
+                            <router-link to="/hostels">BOOK A SPACE</router-link>
                         </button>
                         <button class="bg-white text-blue-600 rounded-lg text-xs p-4 w-36 h-10 flex items-center justify-center">
                             <router-link to="/contact">MAKE ENQUIRY</router-link>

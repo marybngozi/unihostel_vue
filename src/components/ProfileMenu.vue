@@ -30,7 +30,7 @@
                 </li>
                 <li class="block px-4 py-4 text-gray-800 hover:bg-blue-700 hover:text-white">
                     <a href="#" class="flex justify-start">
-                        <i class="fa fa-sign-out-alt mr-3 mt-1 "></i>Log Out
+                        <i class="fa fa-sign-out-alt mr-3 mt-1"></i>Log Out
                     </a>
                 </li>
             </ul>

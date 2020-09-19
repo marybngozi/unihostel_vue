@@ -1,10 +1,7 @@
 <template>
   <section class="">
     <Header active="login" class="sticky top-0"/>
-    <section class="mt-5 flex xs:flex-col md:flex-row">
-      <!-- <aside class="md:w-2/12 md:flex-none md:order-none xs:w-11/12 xs:mx-auto xs:mb-10 sm:mb-0">
-        <AsideLeft />
-      </aside> -->
+    <section class="mt-4 flex xs:flex-col md:flex-row">
       <main class="md:w-7/12 md:flex-none md:order-none xs:w-11/12 xs:mx-auto xs:mb-8 sm:mb-0 xs:order-first">
         <div class="bg-white shadow-lg xs:w-11/12 md:w-12/12 md:flex mx-auto">
           <div class="h-20 md:h-auto md:w-1/3 lg:w-1/3" id="leftImg">
@@ -13,12 +10,12 @@
             <div class="">
               <p class="text-right p-8 md:p-5 text-gray-800 font-regular">LOGIN</p>
             </div>
-            <div class="mt-3">
+            <div class="mt-2">
               <p class="text-gray-600">
                 Register or Login to book a room for either yourself or your ward for the next academic session
               </p>
             </div>
-            <form class="mt-5" action="#" @submit.prevent>
+            <form class="mt-3" action="#" @submit.prevent>
               <div class="field">
                 <input class="text-gray-600" type="text" name="regNumber" id="regNumber" placeholder="2020364386">
                 <label for="regNumber" class="text-gray-600 p-2 text-xs font-thin">Reg Number</label>
@@ -27,7 +24,7 @@
                 <input class="text-gray-600" type="text" name="password" id="password" placeholder="*******">
                 <label for="password" class="text-gray-600 p-2 text-xs font-thin">Password</label>
               </div>
-              <div class="flex justify-end mt-10">
+              <div class="flex justify-end mt-8">
                 <button type="submit" @click="login()">
                   LOGIN
                   <i class="fa fa-sign-in-alt text-orange-700"></i>
@@ -43,9 +40,6 @@
           </div>
         </div>
       </main>
-      <!-- <aside class="md:w-2/12 md:flex-none md:order-none xs:w-11/12 xs:mx-auto xs:mb-10 sm:mb-0 xs:order-last">
-        <AsideRight />
-      </aside> -->
     </section>
     <Footer />
   </section>
